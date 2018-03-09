@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhc.rad.modules.test.dao.OnhandNumDao">
+    
+    <sql id="onhandNumColumns">
+		ohn.id,
+		ohn.pk_invbasdoc,
+		ohn.pk_invmandoc,
+		ohn.sealflag,
+		ohn.safetystocknum,
+		ohn.lowstocknum,
+		ohn.maxstornum,
+		ohn.pk_stordoc,
+		ohn.pk_corp,
+		ohn.currentamount,
+		ohn.oldstore,
+		ohn.pk_stationid,
+		ohn.pk_goodid,
+		ohn.goodcode,
+		ohn.nochargenum,
+		ohn.cbizid,
+		ohn.cproviderid,
+		ohn.profitlossamount,
+		ohn.snochargenum,
+		ohn.create_by AS "createBy.id",
+		ohn.create_date,
+		ohn.update_by AS "updateBy.id",
+		ohn.update_date,
+		ohn.remarks,
+		ohn.del_flag
+		<if test="imd != null">
+			,
+			imd.id AS "imd.id",
+			imd.pk_invbasdoc AS "imd.pkInvbasdoc",
+			imd.serialmanaflag AS "imd.serialmanaflag",
+			imd.wholemanaflag AS "imd.wholemanaflag",
+			imd.instancyflag AS "imd.instancyflag",
+			imd.shelf_type AS "imd.shelfType"
+		</if>
+		<if test="sd != null">
+			,
+			sd.id AS "sd.id",
+			sd.storcode AS "sd.storcode",
+			sd.storname AS "sd.storname",
+			sd.pk_reservoirid AS "sd.pkReservoirid",
+			sd.shelf_type AS "sd.shelfType"
+		</if>
+	</sql>
+	
+	<sql id="onhandNumJoins">
+		<if test="imd != null">
+			JOIN llm_invmandoc imd ON imd.id = ohn.pk_invmandoc
+			<if test="imd.delFlag != null and imd.delFlag != ''">
+				AND imd.del_flag = #{imd.delFlag}
+			</if>
+		</if>
+		<if test="sd != null">
+			JOIN llm_stordoc sd ON sd.id = ohn.pk_stordoc
+			<if test="sd.delFlag != null and sd.delFlag != ''">
+				AND sd.del_flag = #{sd.delFlag}
+			</if>
+		</if>
+	</sql>
+	
+	<select id="findList" parameterType="TestOnhandNum" resultType="TestOnhandNum">
+		SELECT
+			<include refid="onhandNumColumns"/>
+		FROM llm_onhandnum ohn
+		<include refid="onhandNumJoins"/>
+		<where>
+			1 = 1
+			<if test="id != null and id != ''">
+				AND ohn.id = #{id}
+			</if>
+			<if test="pkStordoc != null and pkStordoc != ''">
+				AND ohn.pk_stordoc = #{pkStordoc}
+			</if>
+			<if test="pkStationid != null and pkStationid != ''">
+				AND ohn.pk_stationid = #{pkStationid}
+			</if>
+			<if test="pkInvbasdoc != null and pkInvbasdoc != ''">
+				AND ohn.pk_invbasdoc = #{pkInvbasdoc}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND ohn.del_flag = #{delFlag}
+			</if>
+		</where>
+	</select>
+	
+	<select id="findOnhandNumERPList" parameterType="TestOnhandNumERP" resultType="TestOnhandNumERP">
+		SELECT
+			cinvbasid,
+			cinventoryid,
+			cwarehouseid,
+			dr,
+			nonhandnum
+		FROM llm_onhandnum_erp ohnerp
+		<where>
+			1 = 1
+			<if test="cinvbasid != null and cinvbasid != ''">
+				AND ohnerp.cinvbasid = #{cinvbasid}
+			</if>
+			<if test="cwarehouseid != null and cwarehouseid != ''">
+				AND ohnerp.cwarehouseid = #{cwarehouseid}
+			</if>
+			<if test="dr != null and dr != ''">
+				AND ohnerp.dr = #{dr}
+			</if>
+		</where>
+	</select>
+	
+	<update id="update" parameterType="TestOnhandNum">
+		UPDATE llm_onhandnum SET 
+
+			<if test="nochargenum != null">nochargenum = #{nochargenum},</if>
+			<if test="snochargenum != null">snochargenum = #{snochargenum},</if>
+			<if test="profitlossamount != null">profitlossamount = #{profitlossamount},</if>
+			<if test="currentamountMinus != null">currentamount = currentamount - #{currentamountMinus},</if>
+			update_date = #{updateDate}
+
+		WHERE 
+			1 = 1
+			<if test="pkInvmandoc != null and pkInvmandoc != ''">
+				AND pk_invmandoc = #{pkInvmandoc}
+			</if>
+			<if test="pkStationid != null and pkStationid != ''">
+				AND pk_stationid = #{pkStationid}
+			</if>
+			<if test="pkStordoc != null and pkStordoc != ''">
+				AND pk_stordoc = #{pkStordoc}
+			</if>
+			<if test="id != null and id != ''">
+				AND id = #{id}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND del_flag = #{delFlag}
+			</if>
+	</update>
+	
+	<insert id="insertNewOnhandNum" parameterType="TestOnhandNum">
+		INSERT INTO llm_onhandnum_bak(
+			id,
+			pk_invbasdoc,
+			pk_invmandoc,
+			sealflag,
+			safetystocknum,
+			lowstocknum,
+			maxstornum,
+			pk_stordoc,
+			pk_corp,
+			currentamount,
+			oldstore,
+			pk_stationid,
+			pk_goodid,
+			goodcode,
+			nochargenum,
+			cbizid,
+			cproviderid,
+			profitlossamount,
+			create_by,
+			create_date,
+			update_by,
+			update_date,
+			remarks,
+			del_flag
+		) VALUES (
+			#{id},
+			#{pkInvbasdoc},
+			#{pkInvmandoc},
+			#{sealflag},
+			#{safetystocknum},
+			#{lowstocknum},
+			#{maxstornum},
+			#{pkStordoc},
+			#{pkCorp},
+			#{currentamount},
+			#{oldstore},
+			#{pkStationid},
+			#{pkGoodid},
+			#{goodcode},
+			#{nochargenum},
+			#{cbizid},
+			#{cproviderid},
+			#{profitlossamount},
+			#{createBy.id},
+			#{createDate},
+			#{updateBy.id},
+			#{updateDate},
+			#{remarks},
+			#{delFlag}
+		)
+	</insert>
+	
+	<sql id="stationColumns">
+		sta.id,
+		sta.gzzxbm,
+		sta.gzzxmc
+	</sql>
+	
+	<select id="findStationList" parameterType="TestStation" resultType="TestStation">
+		SELECT 
+			<include refid="stationColumns"/>
+		FROM llm_wk sta
+		<where>
+			1 = 1
+			<if test="gzzxbm != null and gzzxbm != ''">
+				AND sta.gzzxbm = #{gzzxbm}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND sta.del_flag = #{delFlag}
+			</if>
+		</where>
+	</select>
+	
+	<sql id="cargDocColumns">
+		cd.id,
+		cd.code
+	</sql>
+	
+	<select id="findCargDocList" parameterType="TestCargDoc" resultType="TestCargDoc">
+		SELECT 
+			<include refid="cargDocColumns"/>
+		FROM llm_cargdoc cd
+		<where>
+			1 = 1
+			<if test="idList != null">
+				AND cd.id IN
+				<foreach collection="idList" index="index" item="item" open=" (" separator="," close=") ">
+					#{item}
+				</foreach>
+			</if>
+			<if test="code != null and code != ''">
+				AND cd.code = #{code}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND cd.del_flag = #{delFlag}
+			</if>
+		</where>
+	</select>
+	
+	<update id="updateInvShelves" parameterType="TestInvShelves">
+		UPDATE llm_invshelves SET 	
+			
+			pk_onhandnum = #{pkOnhandnum}
+
+		WHERE pk_onhandnum = #{pkOnhandnumed}
+		<if test="delFlag != null and delFlag != ''">
+			AND del_flag = #{delFlag}
+		</if>
+	</update>
+	
+	<update id="updateUnInvShelves" parameterType="TestUnInvShelves">
+		UPDATE llm_uninvshelves SET 	
+			
+			pk_onhandnum = #{pkOnhandnum}
+
+		WHERE pk_onhandnum = #{pkOnhandnumed}
+		<if test="delFlag != null and delFlag != ''">
+			AND del_flag = #{delFlag}
+		</if>
+	</update>
+	
+	<sql id="exWarehouseZColumns">
+		ewz.id,
+		ewz.par_id,
+		ewz.cinventoryid,
+		ewz.csourcebillhid,
+		ewz.outdate,
+		ewz.cprojectid,
+		ewz.nshouldoutnum,
+		ewz.noutnum,
+		ewz.pk_stationid,
+		ewz.pk_cspaceid,
+		ewz.csourcebillbid,
+		ewz.ckckid,
+		ewz.unshelvesflag,
+		ewz.zdy18,
+		ewz.gxh,
+		ewz.shelf_type,
+		ewz.cbizid,
+		ewz.cproviderid,
+		ewz.kitflag,
+		ewz.create_by AS "createBy.id",
+		ewz.create_date,
+		ewz.update_by AS "updateBy.id",
+		ewz.update_date,
+		ewz.remarks,
+		ewz.del_flag
+		<if test="imd != null">
+			,
+			imd.id AS "imd.id",
+			imd.pk_invbasdoc AS "imd.pkInvbasdoc",
+			imd.serialmanaflag AS "imd.serialmanaflag",
+			imd.wholemanaflag AS "imd.wholemanaflag",
+			imd.instancyflag AS "imd.instancyflag",
+			imd.shelf_type AS "imd.shelfType"
+		</if>
+		<if test="sd != null">
+			,
+			sd.id AS "sd.id",
+			sd.storcode AS "sd.storcode",
+			sd.storname AS "sd.storname",
+			sd.pk_reservoirid AS "sd.pkReservoirid",
+			sd.shelf_type AS "sd.shelfType"
+		</if>
+	</sql>
+	
+	<sql id="exWarehouseZJoins">
+		<if test="imd != null">
+			JOIN llm_invmandoc imd ON imd.id = ewz.cinventoryid
+			<if test="imd.delFlag != null and imd.delFlag != ''">
+				AND imd.del_flag = #{imd.delFlag}
+			</if>
+		</if>
+		<if test="sd != null">
+			JOIN llm_stordoc sd ON sd.id = ewz.ckckid
+			<if test="sd.delFlag != null and sd.delFlag != ''">
+				AND sd.del_flag = #{sd.delFlag}
+			</if>
+		</if>
+	</sql>
+	
+	<select id="findExWarehouseZList" parameterType="TestExWarehouseZ" resultType="TestExWarehouseZ">
+		SELECT 
+			<include refid="exWarehouseZColumns"/>
+		FROM llm_exwarehouse_z ewz
+		<include refid="exWarehouseZJoins" />
+		<where>
+			1 = 1
+			<if test="kited != null and kited == 'NO'">
+				AND EXISTS (
+					<![CDATA[SELECT 1 FROM llm_exwarehouse ew WHERE ew.ID = ewz.par_id AND ew.exflag <> '2' AND ew.del_flag = #{DEL_FLAG_NORMAL}]]>
+				)
+			</if>
+			<if test="unshelvesflag != null and unshelvesflag != ''">
+				AND ewz.unshelvesflag = #{unshelvesflag}
+				AND EXISTS (
+					<![CDATA[SELECT 1 FROM llm_exwarehouse ew WHERE ew.ID = ewz.par_id AND ew.exflag = '0' AND ew.del_flag = #{DEL_FLAG_NORMAL}]]>
+				)
+			</if>
+			<if test="csourcebillbid != null and csourcebillbid != ''">
+				AND ewz.csourcebillbid = #{csourcebillbid}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND ewz.del_flag = #{delFlag}
+			</if>
+		</where>
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+			</otherwise>
+		</choose>
+	</select>
+	
+	<select id="findPickmList" parameterType="TestPickm" resultType="TestPickm">
+		SELECT 
+			pm.id,
+			pm.bljhdh,
+			pm.zdy9,
+			pm.zdy17,
+			pm.zdy3,
+			pm.bljhlx,
+			pm.zt,
+			pm.sflbid
+		FROM llm_pickm pm
+		<where>
+			1 = 1
+			<if test="bljhdhList != null">
+				AND pm.bljhdh IN
+				<foreach collection="bljhdhList" index="index" item="item" open=" (" separator="," close=") ">
+					#{item}
+				</foreach>
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND pm.del_flag = #{delFlag}
+			</if>
+		</where>
+	</select>
+	
+	<select id="findPickmBList" parameterType="TestPickmB" resultType="TestPickmB">
+		SELECT 
+			pmb.id,
+			pmb.ckckid,
+			pmb.gzzxid,
+			pmb.pk_pickmid,
+			pmb.pk_produce,
+			pmb.deyl,
+			pmb.dwde,
+			pmb.jhcksl,
+			pmb.ljcksl
+		<if test="produce != null">
+			,
+			produce.id AS "produce.id",
+			produce.pk_invbasdoc AS "produce.pkInvbasdoc"
+		</if>
+		FROM llm_pickm_b pmb
+		<if test="produce != null">
+			JOIN llm_produce produce ON produce.id = pmb.pk_produce
+			<if test="produce.delFlag != null and produce.delFlag != ''">
+				AND produce.del_flag = #{produce.delFlag}
+			</if>
+		</if>
+		<where>
+			1 = 1
+			<if test="ljckslbfg != null">
+				AND EXISTS (
+					SELECT 1 FROM llm_pickm pmt WHERE pmt.zt IN ('B') AND pmt.complete_type IN ('0','2') AND pmt.bljhdh LIKE 'PM16%' AND pmb.pk_pickmid = pmt.ID
+				)
+				AND EXISTS (
+				    SELECT 1 FROM llm_exwarehouse exwt
+				    JOIN llm_exwarehouse_z exwzt ON exwzt.par_id = exwt.ID
+				    WHERE exwzt.csourcebillbid = pmb.ID AND exwt.exflag <![CDATA[<>]]> '2' AND exwt.del_flag = '0'
+				)
+			</if>
+			<if test="pkPickmidList != null">
+				AND pmb.pk_pickmid IN
+				<foreach collection="pkPickmidList" index="index" item="item" open=" (" separator="," close=") ">
+					#{item}
+				</foreach>
+			</if>
+			<if test="pkPickmid != null and pkPickmid != ''">
+				AND pmb.pk_pickmid = #{pkPickmid}
+			</if>
+			<if test="delFlag != null and delFlag != ''">
+				AND pmb.del_flag = #{delFlag}
+			</if>
+		</where>
+	</select>
+	
+	<select id="findPickmBERPList" parameterType="TestPickmB" resultType="TestPickmB">
+		SELECT 
+			pmb.pk_pickm_bid AS "id",
+			pmb.ckckid,
+			pmb.gzzxid,
+			pmb.pk_pickmid,
+			pmb.pk_produce,
+			pmb.deyl,
+			pmb.dwde,
+			pmb.jhcksl,
+			pmb.ljcksl
+		FROM mm_pickm_b@CGGS pmb
+		<where>
+			1 = 1
+			<if test="pkPickmidList != null">
+				AND pmb.pk_pickmid IN
+				<foreach collection="pkPickmidList" index="index" item="item" open=" (" separator="," close=") ">
+					#{item}
+				</foreach>
+			</if>
+		</where>
+	</select>
+	
+	<update id="updatePickm" parameterType="TestPickm">
+		UPDATE llm_pickm SET 
+
+			<if test="zt != null and zt != ''">zt = #{zt},</if>
+			update_date = #{updateDate}
+
+		WHERE 
+			1 = 1 AND id = #{id}
+<!-- 			<if test="id != null and id != ''"> -->
+<!-- 				AND id = #{id} -->
+<!-- 			</if> -->
+	</update>
+	
+	<update id="updatePickmB" parameterType="TestPickmB">
+		UPDATE llm_pickm_b SET 
+
+			<if test="ckckid != null and ckckid != ''">ckckid = #{ckckid},</if>
+			<if test="deyl != null">deyl = #{deyl},</if>
+			<if test="dwde != null">dwde = #{dwde},</if>
+			<if test="jhcksl != null">jhcksl = #{jhcksl},</if>
+			<if test="ljcksl != null">ljcksl = #{ljcksl},</if>
+			update_date = #{updateDate}
+
+		WHERE 
+			1 = 1 AND id = #{id}
+<!-- 			<if test="id != null and id != ''"> -->
+<!-- 				AND id = #{id} -->
+<!-- 			</if> -->
+	</update>
+	
+</mapper>

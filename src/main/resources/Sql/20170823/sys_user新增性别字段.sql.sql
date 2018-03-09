@@ -1,0 +1,1 @@
+alter table sys_user add (sex char(1) default '1' not null)

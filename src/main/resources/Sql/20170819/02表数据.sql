@@ -1,0 +1,11223 @@
+SET DEFINE OFF;
+Insert into TEST.ACT_GE_BYTEARRAY
+   (ID_, REV_, NAME_, DEPLOYMENT_ID_, GENERATED_)
+ Values
+   ('0f323655b3d3428da67df430407c0dee', 1, 'test_audit.bpmn20.xml', 'e1e410763e624ea79a8138adb38611ea', 0);
+Insert into TEST.ACT_GE_BYTEARRAY
+   (ID_, REV_, NAME_, DEPLOYMENT_ID_, GENERATED_)
+ Values
+   ('96e796a1a5dd40a9bdf49f35b854d899', 1, 'test_audit.png', 'e1e410763e624ea79a8138adb38611ea', 0);
+Insert into TEST.ACT_GE_BYTEARRAY
+   (ID_, REV_, NAME_, DEPLOYMENT_ID_, GENERATED_)
+ Values
+   ('68ac8b7d99c84a51a8d72f4256f369d0', 1, 'test_audit.bpmn20.xml', '5060872a95ca40ad954bd9e6379959f8', 0);
+Insert into TEST.ACT_GE_BYTEARRAY
+   (ID_, REV_, NAME_, DEPLOYMENT_ID_, GENERATED_)
+ Values
+   ('8e73f42caf494c089206d4a0e5445a89', 1, 'test_audit.png', '5060872a95ca40ad954bd9e6379959f8', 0);
+COMMIT;
+Insert into TEST.ACT_GE_PROPERTY
+   (NAME_, VALUE_, REV_)
+ Values
+   ('schema.version', '5.15.1', 1);
+Insert into TEST.ACT_GE_PROPERTY
+   (NAME_, VALUE_, REV_)
+ Values
+   ('schema.history', 'create(5.15.1)', 1);
+Insert into TEST.ACT_GE_PROPERTY
+   (NAME_, VALUE_, REV_)
+ Values
+   ('next.dbid', '1', 1);
+COMMIT;
+Insert into TEST.ACT_RE_DEPLOYMENT
+   (ID_, NAME_, DEPLOY_TIME_)
+ Values
+   ('e1e410763e624ea79a8138adb38611ea', 'SpringAutoDeployment', TO_TIMESTAMP('2015/5/20 10:15:47.140000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'));
+Insert into TEST.ACT_RE_DEPLOYMENT
+   (ID_, NAME_, DEPLOY_TIME_)
+ Values
+   ('5060872a95ca40ad954bd9e6379959f8', 'SpringAutoDeployment', TO_TIMESTAMP('2016/3/21 19:54:24.917000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'));
+COMMIT;
+Insert into TEST.ACT_RE_PROCDEF
+   (ID_, REV_, CATEGORY_, NAME_, KEY_,
+    VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, HAS_START_FORM_KEY_,
+    SUSPENSION_STATE_)
+ Values
+   ('test_audit:1:5b5dabb3e96f430c968ee420aad882a6', 1, 'http://www.activiti.org/test', '流程审批测试流程', 'test_audit',
+    1, 'e1e410763e624ea79a8138adb38611ea', 'test_audit.bpmn20.xml', 'test_audit.png', 1,
+    1);
+Insert into TEST.ACT_RE_PROCDEF
+   (ID_, REV_, CATEGORY_, NAME_, KEY_,
+    VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, HAS_START_FORM_KEY_,
+    SUSPENSION_STATE_)
+ Values
+   ('test_audit:2:16287c01316b4af2bcf0242a4fe54920', 1, 'http://www.activiti.org/test', '流程审批测试流程', 'test_audit',
+    2, '5060872a95ca40ad954bd9e6379959f8', 'test_audit.bpmn20.xml', 'test_audit.png', 1,
+    1);
+COMMIT;
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, COLOR, KEYWORDS,
+    WEIGHT, HITS, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '3', '文章标题标题标题标题', 'green', '关键字1,关键字2',
+    0, 0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, COLOR, KEYWORDS,
+    WEIGHT, HITS, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '3', '文章标题标题标题标题', 'red', '关键字1,关键字2',
+    0, 0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('3', '3', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, COLOR, KEYWORDS,
+    WEIGHT, HITS, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '3', '文章标题标题标题标题', 'green', '关键字1,关键字2',
+    0, 0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('5', '3', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('6', '3', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('7', '4', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, COLOR, KEYWORDS,
+    WEIGHT, HITS, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', '4', '文章标题标题标题标题', 'blue', '关键字1,关键字2',
+    0, 0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('9', '4', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('10', '4', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('11', '5', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('12', '5', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('13', '5', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('14', '7', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('15', '7', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('16', '7', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('17', '7', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('18', '8', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('19', '8', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('20', '8', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('21', '8', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('22', '9', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('23', '9', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('24', '9', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('25', '9', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('26', '9', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('27', '11', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('28', '11', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('29', '11', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('30', '11', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('31', '11', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('32', '12', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('33', '12', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('34', '12', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('35', '12', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('36', '12', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('37', '13', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('38', '13', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('39', '13', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('40', '13', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('41', '14', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('42', '14', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('43', '14', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('44', '14', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('45', '14', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('46', '15', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('47', '15', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('48', '15', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('49', '16', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('50', '17', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('51', '17', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('52', '26', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_ARTICLE
+   (ID, CATEGORY_ID, TITLE, KEYWORDS, WEIGHT,
+    HITS, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('53', '26', '文章标题标题标题标题', '关键字1,关键字2', 0,
+    0, '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+COMMIT;
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('1', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('2', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('3', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('4', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('5', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('6', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('7', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('8', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('9', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('10', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('11', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('12', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('13', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('14', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('15', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('16', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('17', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('18', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('19', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('20', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('21', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('22', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('23', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('24', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('25', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('26', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('27', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('28', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('29', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('30', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('31', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('32', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('33', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('34', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('35', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('36', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('37', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('38', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('39', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('40', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('41', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('42', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('43', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('44', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('45', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('46', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('47', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('48', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('49', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('50', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('51', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('52', '来源', '1,2,3', '1');
+Insert into TEST.CMS_ARTICLE_DATA
+   (ID, COPYFROM, RELATION, ALLOW_COMMENT)
+ Values
+   ('53', '来源', '1,2,3', '1');
+COMMIT;
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    NAME, SORT, IN_MENU, IN_LIST, SHOW_MODES,
+    ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '0', '0,', '0', '1',
+    '顶级栏目', 0, '1', '1', '0',
+    '0', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '1', '0,1,', '1', '3',
+    'article', '组织机构', 10, '1', '1',
+    '0', '0', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '2', '0,1,2,', '1', '3',
+    'article', '网站简介', 30, '1', '1',
+    '0', '0', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '2', '0,1,2,', '1', '3',
+    'article', '内部机构', 40, '1', '1',
+    '0', '0', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '2', '0,1,2,', '1', '3',
+    'article', '地方机构', 50, '1', '1',
+    '0', '0', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '1', '0,1,', '1', '3',
+    'article', '质量检验', 20, '1', '1',
+    '1', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', '6', '0,1,6,', '1', '3',
+    'article', '产品质量', 30, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', '6', '0,1,6,', '1', '3',
+    'article', '技术质量', 40, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9', '6', '0,1,6,', '1', '3',
+    'article', '工程质量', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('10', '1', '0,1,', '1', '4',
+    'article', '软件介绍', 20, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('11', '10', '0,1,10,', '1', '4',
+    'article', '网络工具', 30, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('12', '10', '0,1,10,', '1', '4',
+    'article', '浏览工具', 40, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('13', '10', '0,1,10,', '1', '4',
+    'article', '浏览辅助', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('14', '10', '0,1,10,', '1', '4',
+    'article', '网络优化', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('15', '10', '0,1,10,', '1', '4',
+    'article', '邮件处理', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('16', '10', '0,1,10,', '1', '4',
+    'article', '下载工具', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('17', '10', '0,1,10,', '1', '4',
+    'article', '搜索工具', 50, '1', '1',
+    '2', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('18', '1', '0,1,', '1', '5',
+    'link', '友情链接', 90, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('19', '18', '0,1,18,', '1', '5',
+    'link', '常用网站', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('20', '18', '0,1,18,', '1', '5',
+    'link', '门户网站', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('21', '18', '0,1,18,', '1', '5',
+    'link', '购物网站', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('22', '18', '0,1,18,', '1', '5',
+    'link', '交友社区', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('23', '18', '0,1,18,', '1', '5',
+    'link', '音乐视频', 50, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    NAME, HREF, TARGET, SORT, IN_MENU,
+    IN_LIST, SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('24', '1', '0,1,', '1', '6',
+    '百度一下', 'http://www.baidu.com', '_blank', 90, '1',
+    '1', '0', '1', '0', '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    NAME, HREF, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('25', '1', '0,1,', '1', '6',
+    '全文检索', '/search', 90, '0', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    MODULE, NAME, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('26', '1', '0,1,', '2', '6',
+    'article', '测试栏目', 90, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_CATEGORY
+   (ID, PARENT_ID, PARENT_IDS, SITE_ID, OFFICE_ID,
+    NAME, HREF, SORT, IN_MENU, IN_LIST,
+    SHOW_MODES, ALLOW_COMMENT, IS_AUDIT, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('27', '1', '0,1,', '1', '6',
+    '公共留言', '/guestbook', 90, '1', '1',
+    '0', '1', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '19', 'JeeSite', 'http://thinkgem.github.com/jeesite', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '19', 'ThinkGem', 'http://thinkgem.iteye.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '19', '百度一下', 'http://www.baidu.com', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '19', '谷歌搜索', 'http://www.google.com', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '20', '新浪网', 'http://www.sina.com.cn', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '20', '腾讯网', 'http://www.qq.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', '21', '淘宝网', 'http://www.taobao.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', '21', '新华网', 'http://www.xinhuanet.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9', '22', '赶集网', 'http://www.ganji.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('10', '22', '58同城', 'http://www.58.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('11', '23', '视频大全', 'http://v.360.cn/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.CMS_LINK
+   (ID, CATEGORY_ID, TITLE, HREF, WEIGHT,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('12', '23', '凤凰网', 'http://www.ifeng.com/', 0,
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.CMS_SITE
+   (ID, NAME, TITLE, DESCRIPTION, KEYWORDS,
+    THEME, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('1', '默认站点', 'JeeSite Web', 'JeeSite', 'JeeSite',
+    'basic', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.CMS_SITE
+   (ID, NAME, TITLE, DESCRIPTION, KEYWORDS,
+    THEME, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('2', '子站点测试', 'JeeSite Subsite', 'JeeSite subsite', 'JeeSite subsite',
+    'basic', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+COMMIT;
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9c9de9db6da743bb899036c6546061ac', '单表', 'curd', 'com.thinkgem.jeesite.modules', 'test',
+    '单表生成', '单表', 'ThinkGem', 'aef6f1fc948f4c9ab1c1b780bc471cc2', '1',
+    TO_TIMESTAMP('2013/12/8 11:11:05.943000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:13.953000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('e6d905fd236b46d1af581dd32bdfb3b0', '主子表', 'curd_many', 'com.thinkgem.jeesite.modules', 'test',
+    '主子表生成', '主子表', 'ThinkGem', '43d6d5acffa14c258340ce6765e46c6f', '1',
+    TO_TIMESTAMP('2013/12/8 11:13:34.428000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:42:16.729000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('35a13dc260284a728a270db3f382664b', '树结构', 'treeTable', 'com.thinkgem.jeesite.modules', 'test',
+    '树结构生成', '树结构', 'ThinkGem', 'f6e4dafaa72f4c509636484715f33a96', '1',
+    TO_TIMESTAMP('2013/12/8 11:17:06.818000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:50:01.781000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('17a758d1a0544e0c82331c993f7107df', '课程管理', 'curd', 'com.thinkgem.jeesite.modules', 'sys',
+    '课程性质管理', '课程性质管理', '吴彬彬', 'bea93dcb269e47baa770024ab397ea05', '1',
+    TO_TIMESTAMP('2015/5/20 10:27:52.974000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 14:31:50.095000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('c15605e827e34ce29af377b79607baf7', '课程性质管理', 'curd', 'com.thinkgem.jeesite.modules', 'sys',
+    '课程性质管理', '课程性质管理', '吴彬彬', '69f50fabdada4d16ac84c76c7d4f5dc0', '1',
+    TO_TIMESTAMP('2015/5/20 14:36:20.040000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:43.426000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_SCHEME
+   (ID, NAME, CATEGORY, PACKAGE_NAME, MODULE_NAME,
+    FUNCTION_NAME, FUNCTION_NAME_SIMPLE, FUNCTION_AUTHOR, GEN_TABLE_ID, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2409182a4e3b45cfb3b526bbefe7e883', '课程管理', 'curd', 'com.thinkgem.jeesite.modules', 'sys',
+    '课程管理', '课程管理', '吴彬彬', 'bea93dcb269e47baa770024ab397ea05', '1',
+    TO_TIMESTAMP('2015/5/20 14:37:13.410000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:23.951000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('aef6f1fc948f4c9ab1c1b780bc471cc2', 'test_data', '业务数据表', 'TestData', '1',
+    TO_TIMESTAMP('2013/12/8 11:10:28.984000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.511000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('43d6d5acffa14c258340ce6765e46c6f', 'test_data_main', '业务数据表', 'TestDataMain', '1',
+    TO_TIMESTAMP('2013/12/8 11:11:59.745000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.360000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, PARENT_TABLE,
+    PARENT_TABLE_FK, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('6e05c389f3c6415ea34e55e9dfb28934', 'test_data_child', '业务数据子表', 'TestDataChild', 'test_data_main',
+    'test_data_main_id', '1', TO_TIMESTAMP('2013/12/8 11:12:57.960000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.324000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('f6e4dafaa72f4c509636484715f33a96', 'test_tree', '树结构表', 'TestTree', '1',
+    TO_TIMESTAMP('2013/12/8 11:16:19.093000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.755000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('69f50fabdada4d16ac84c76c7d4f5dc0', 'test_nature', '课程性质', 'Nature', '1',
+    TO_TIMESTAMP('2015/5/20 10:19:09.930000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.728000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE
+   (ID, NAME, COMMENTS, CLASS_NAME, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('bea93dcb269e47baa770024ab397ea05', 'test_course', '课程表', 'Course', '1',
+    TO_TIMESTAMP('2015/5/20 10:23:29.303000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.315000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('cfcfa06ea61749c9b4c4dbc507e0e580', 'f6e4dafaa72f4c509636484715f33a96', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    1, '1', TO_TIMESTAMP('2013/12/8 11:16:19.095000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.756000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('e0eee753f2b24898b76d617f980d0ecc', 'bea93dcb269e47baa770024ab397ea05', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    10, '1', TO_TIMESTAMP('2015/5/20 10:23:29.305000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.317000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('6bf072eac8cd48318ff3cc5a73707467', 'bea93dcb269e47baa770024ab397ea05', 'code', '课程代码', 'varchar2(64)',
+    'String', 'code', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    20, '1', TO_TIMESTAMP('2015/5/20 10:23:29.309000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.322000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('7d934fe824dc4aeeb8ca2ef34a81f3ee', 'bea93dcb269e47baa770024ab397ea05', 'name', '课程名称', 'nvarchar2(100)',
+    'String', 'name', '0', '0', '1',
+    '1', '1', '1', 'like', 'input',
+    30, '1', TO_TIMESTAMP('2015/5/20 10:23:29.312000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.324000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('32354f47883c4d969271646e78299202', 'bea93dcb269e47baa770024ab397ea05', 'xf', '学分', 'varchar2(5)',
+    'String', 'xf', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    40, '1', TO_TIMESTAMP('2015/5/20 10:23:29.315000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.327000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('9d81e02a523d40b2a62c61f20eceabb3', 'bea93dcb269e47baa770024ab397ea05', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    50, '1', TO_TIMESTAMP('2015/5/20 10:23:29.317000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.329000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('4129ce970a444142b4f8bebb18087d2e', 'bea93dcb269e47baa770024ab397ea05', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    60, '1', TO_TIMESTAMP('2015/5/20 10:23:29.320000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.331000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('44e318e5d9c24b35816e0b3e30d8bacb', 'bea93dcb269e47baa770024ab397ea05', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    70, '1', TO_TIMESTAMP('2015/5/20 10:23:29.322000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.333000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('7949e1ed85c64721b2b708156970d546', 'bea93dcb269e47baa770024ab397ea05', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    80, '1', TO_TIMESTAMP('2015/5/20 10:23:29.327000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.336000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('addaa7c7d94f401caddf412cbb32c412', 'bea93dcb269e47baa770024ab397ea05', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'textarea',
+    90, '1', TO_TIMESTAMP('2015/5/20 10:23:29.329000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.338000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('0e15ff591a34415194723d2552f015fb', 'bea93dcb269e47baa770024ab397ea05', 'del_flag', '删除标记', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 100, '1', TO_TIMESTAMP('2015/5/20 10:23:29.332000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:27:48.340000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('c93eb814f9d24302b994ad43b9bb8b9f', 'bea93dcb269e47baa770024ab397ea05', 'nature_id', '课程性质编号', 'varchar2(64)',
+    'String', 'nature.id', '0', '0', '1',
+    '1', '0', '0', '=', 'select',
+    110, '1', TO_TIMESTAMP('2015/5/20 10:23:29.334000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:27:48.342000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('9a012c1d2f934dbf996679adb7cc827a', 'f6e4dafaa72f4c509636484715f33a96', 'parent_id', '父级编号', 'varchar2(64)',
+    'This', 'parent.id|name', '0', '0', '1',
+    '1', '0', '0', '=', 'treeselect',
+    2, '1', TO_TIMESTAMP('2013/12/8 11:16:19.096000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.759000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('24bbdc0a555e4412a106ab1c5f03008e', 'f6e4dafaa72f4c509636484715f33a96', 'parent_ids', '所有父级编号', 'varchar2(2000)',
+    'String', 'parentIds', '0', '0', '1',
+    '1', '0', '0', 'like', 'input',
+    3, '1', TO_TIMESTAMP('2013/12/8 11:16:19.098000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.761000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('633f5a49ec974c099158e7b3e6bfa930', 'f6e4dafaa72f4c509636484715f33a96', 'name', '名称', 'nvarchar2(100)',
+    'String', 'name', '0', '0', '1',
+    '1', '1', '1', 'like', 'input',
+    4, '1', TO_TIMESTAMP('2013/12/8 11:16:19.115000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.763000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('6763ff6dc7cd4c668e76cf9b697d3ff6', 'f6e4dafaa72f4c509636484715f33a96', 'sort', '排序', 'number(10)',
+    'Integer', 'sort', '0', '0', '1',
+    '1', '1', '0', '=', 'input',
+    5, '1', TO_TIMESTAMP('2013/12/8 11:16:19.116000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.764000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('195ee9241f954d008fe01625f4adbfef', 'f6e4dafaa72f4c509636484715f33a96', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    6, '1', TO_TIMESTAMP('2013/12/8 11:16:19.117000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.766000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('92481c16a0b94b0e8bba16c3c54eb1e4', 'f6e4dafaa72f4c509636484715f33a96', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    7, '1', TO_TIMESTAMP('2013/12/8 11:16:19.118000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.768000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('bb1256a8d1b741f6936d8fed06f45eed', 'f6e4dafaa72f4c509636484715f33a96', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    8, '1', TO_TIMESTAMP('2013/12/8 11:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.770000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('416c76d2019b4f76a96d8dc3a8faf84c', 'f6e4dafaa72f4c509636484715f33a96', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    9, '1', TO_TIMESTAMP('2013/12/8 11:16:19.120000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.772000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('f5ed8c82bad0413fbfcccefa95931358', 'f6e4dafaa72f4c509636484715f33a96', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'textarea',
+    10, '1', TO_TIMESTAMP('2013/12/8 11:16:19.121000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 13:49:47.774000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('46e6d8283270493687085d29efdecb05', 'f6e4dafaa72f4c509636484715f33a96', 'del_flag', '删除标记（0：正常；1：删除）', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 11, '1', TO_TIMESTAMP('2013/12/8 11:16:19.122000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 13:49:47.775000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('e026bae0c4cd4d6682b81cb66db7faa3', '69f50fabdada4d16ac84c76c7d4f5dc0', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    10, '1', TO_TIMESTAMP('2015/5/20 10:19:09.933000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.731000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('40c9d42a4a7d47eeaa5db652404f674c', '69f50fabdada4d16ac84c76c7d4f5dc0', 'code', '课程性质代码', 'varchar2(64)',
+    'String', 'code', '0', '1', '1',
+    '1', '0', '0', '=', 'input',
+    20, '1', TO_TIMESTAMP('2015/5/20 10:19:09.939000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.733000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('b24318afb77547ba80394fc18022d1fe', '69f50fabdada4d16ac84c76c7d4f5dc0', 'name', '课程性质名称', 'nvarchar2(100)',
+    'String', 'name', '0', '0', '1',
+    '1', '1', '1', 'like', 'input',
+    30, '1', TO_TIMESTAMP('2015/5/20 10:19:09.942000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.736000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('5dae6ea85bad4b9eb75b8c17865fafaf', '69f50fabdada4d16ac84c76c7d4f5dc0', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    40, '1', TO_TIMESTAMP('2015/5/20 10:19:09.945000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.738000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('314636891e8f4a8aa60568c9e1e43659', '69f50fabdada4d16ac84c76c7d4f5dc0', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    50, '1', TO_TIMESTAMP('2015/5/20 10:19:09.948000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.740000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('e64aedb4ac81449dbf76a1194d9512a7', '69f50fabdada4d16ac84c76c7d4f5dc0', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    60, '1', TO_TIMESTAMP('2015/5/20 10:19:09.951000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.745000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('2a5971bbcae945ee97eab16c41bad767', '69f50fabdada4d16ac84c76c7d4f5dc0', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    70, '1', TO_TIMESTAMP('2015/5/20 10:19:09.954000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.747000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('c1e334385ed743ffbf5a2cd2d97a6ac3', '69f50fabdada4d16ac84c76c7d4f5dc0', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'textarea',
+    80, '1', TO_TIMESTAMP('2015/5/20 10:19:09.957000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:28:00.749000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('c9f0c90f807c45d296d4ea4e18bbfef8', '69f50fabdada4d16ac84c76c7d4f5dc0', 'del_flag', '删除标记', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 90, '1', TO_TIMESTAMP('2015/5/20 10:19:09.960000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:28:00.751000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('5e5c69bd3eaa4dcc9743f361f3771c08', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    1, '1', TO_TIMESTAMP('2013/12/8 11:10:29.017000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.513000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('1d5ca4d114be41e99f8dc42a682ba609', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'user_id', '归属用户', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'user.id|name', '0', '1', '1',
+    '1', '1', '1', '=', 'userselect',
+    2, '1', TO_TIMESTAMP('2013/12/8 11:10:29.125000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.515000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('ad3bf0d4b44b4528a5211a66af88f322', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'office_id', '归属部门', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.Office', 'office.id|name', '0', '1', '1',
+    '1', '1', '1', '=', 'officeselect',
+    3, '1', TO_TIMESTAMP('2013/12/8 11:10:29.128000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.517000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('71ea4bc10d274911b405f3165fc1bb1a', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'area_id', '归属区域', 'nvarchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.Area', 'area.id|name', '0', '1', '1',
+    '1', '1', '1', '=', 'areaselect',
+    4, '1', TO_TIMESTAMP('2013/12/8 11:10:29.130000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.520000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('4a0a1fff86ca46519477d66b82e01991', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'name', '名称', 'nvarchar2(100)',
+    'String', 'name', '0', '1', '1',
+    '1', '1', '1', 'like', 'input',
+    5, '1', TO_TIMESTAMP('2013/12/8 11:10:29.131000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.522000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('0902a0cb3e8f434280c20e9d771d0658', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'sex', '性别', 'char(1)',
+    'String', 'sex', '0', '1', '1',
+    '1', '1', '1', '=', 'radiobox',
+    'sex', 6, '1', TO_TIMESTAMP('2013/12/8 11:10:29.133000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 11:28:00.524000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('1b8eb55f65284fa6b0a5879b6d8ad3ec', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'in_date', '加入日期', 'date(7)',
+    'java.util.Date', 'inDate', '0', '1', '1',
+    '1', '0', '1', 'between', 'dateselect',
+    7, '1', TO_TIMESTAMP('2013/12/8 11:10:29.134000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.526000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('398b4a03f06940bfb979ca574e1911e3', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    8, '1', TO_TIMESTAMP('2013/12/8 11:10:29.136000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.700000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('103fc05c88ff40639875c2111881996a', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    9, '1', TO_TIMESTAMP('2013/12/8 11:10:29.137000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.717000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('5a4a1933c9c844fdba99de043dc8205e', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    10, '1', TO_TIMESTAMP('2013/12/8 11:10:29.138000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.721000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('eb2e5afd13f147a990d30e68e7f64e12', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    11, '1', TO_TIMESTAMP('2013/12/8 11:10:29.140000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.723000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('8da38dbe5fe54e9bb1f9682c27fbf403', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'textarea',
+    12, '1', TO_TIMESTAMP('2013/12/8 11:10:29.142000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:28:00.724000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('35af241859624a01917ab64c3f4f0813', 'aef6f1fc948f4c9ab1c1b780bc471cc2', 'del_flag', '删除标记（0：正常；1：删除）', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 13, '1', TO_TIMESTAMP('2013/12/8 11:10:29.144000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 11:28:00.726000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('19c6478b8ff54c60910c2e4fc3d27503', '43d6d5acffa14c258340ce6765e46c6f', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    1, '1', TO_TIMESTAMP('2013/12/8 11:11:59.747000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.362000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('8b9de88df53e485d8ef461c4b1824bc1', '43d6d5acffa14c258340ce6765e46c6f', 'user_id', '归属用户', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'user.id|name', '0', '1', '1',
+    '1', '1', '1', '=', 'userselect',
+    2, '1', TO_TIMESTAMP('2013/12/8 11:11:59.749000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.365000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('ca68a2d403f0449cbaa1d54198c6f350', '43d6d5acffa14c258340ce6765e46c6f', 'office_id', '归属部门', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.Office', 'office.id|name', '0', '1', '1',
+    '1', '0', '0', '=', 'officeselect',
+    3, '1', TO_TIMESTAMP('2013/12/8 11:11:59.751000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.367000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('3a7cf23ae48a4c849ceb03feffc7a524', '43d6d5acffa14c258340ce6765e46c6f', 'area_id', '归属区域', 'nvarchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.Area', 'area.id|name', '0', '1', '1',
+    '1', '0', '0', '=', 'areaselect',
+    4, '1', TO_TIMESTAMP('2013/12/8 11:11:59.754000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.372000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('67d0331f809a48ee825602659f0778e8', '43d6d5acffa14c258340ce6765e46c6f', 'name', '名称', 'nvarchar2(100)',
+    'String', 'name', '0', '1', '1',
+    '1', '1', '1', 'like', 'input',
+    5, '1', TO_TIMESTAMP('2013/12/8 11:11:59.756000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.374000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('d5c2d932ae904aa8a9f9ef34cd36fb0b', '43d6d5acffa14c258340ce6765e46c6f', 'sex', '性别', 'char(1)',
+    'String', 'sex', '0', '1', '1',
+    '1', '0', '1', '=', 'select',
+    'sex', 6, '1', TO_TIMESTAMP('2013/12/8 11:11:59.757000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 11:26:16.376000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('1ac6562f753d4e599693840651ab2bf7', '43d6d5acffa14c258340ce6765e46c6f', 'in_date', '加入日期', 'date(7)',
+    'java.util.Date', 'inDate', '0', '1', '1',
+    '1', '0', '0', '=', 'dateselect',
+    7, '1', TO_TIMESTAMP('2013/12/8 11:11:59.758000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.378000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('8b48774cfe184913b8b5eb17639cf12d', '43d6d5acffa14c258340ce6765e46c6f', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    8, '1', TO_TIMESTAMP('2013/12/8 11:11:59.760000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.379000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('4c8ef12cb6924b9ba44048ba9913150b', '43d6d5acffa14c258340ce6765e46c6f', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    9, '1', TO_TIMESTAMP('2013/12/8 11:11:59.761000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.381000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('21756504ffdc487eb167a823f89c0c06', '43d6d5acffa14c258340ce6765e46c6f', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    10, '1', TO_TIMESTAMP('2013/12/8 11:11:59.763000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.383000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('3d9c32865bb44e85af73381df0ffbf3d', '43d6d5acffa14c258340ce6765e46c6f', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    11, '1', TO_TIMESTAMP('2013/12/8 11:11:59.764000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.385000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('cb9c0ec3da26432d9cbac05ede0fd1d0', '43d6d5acffa14c258340ce6765e46c6f', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'textarea',
+    12, '1', TO_TIMESTAMP('2013/12/8 11:11:59.765000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:26:16.386000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('e8d11127952d4aa288bb3901fc83127f', '43d6d5acffa14c258340ce6765e46c6f', 'del_flag', '删除标记（0：正常；1：删除）', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 13, '1', TO_TIMESTAMP('2013/12/8 11:11:59.767000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 11:26:16.388000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('33152ce420904594b3eac796a27f0560', '6e05c389f3c6415ea34e55e9dfb28934', 'id', '编号', 'varchar2(64)',
+    'String', 'id', '1', '0', '1',
+    '0', '0', '0', '=', 'input',
+    1, '1', TO_TIMESTAMP('2013/12/8 11:12:57.962000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.326000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('68345713bef3445c906f70e68f55de38', '6e05c389f3c6415ea34e55e9dfb28934', 'test_data_main_id', '业务主表', 'varchar2(64)',
+    'String', 'testDataMain.id', '0', '1', '1',
+    '1', '0', '0', '=', 'input',
+    2, '1', TO_TIMESTAMP('2013/12/8 11:12:57.964000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.327000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('e64050a2ebf041faa16f12dda5dcf784', '6e05c389f3c6415ea34e55e9dfb28934', 'name', '名称', 'nvarchar2(100)',
+    'String', 'name', '0', '1', '1',
+    '1', '1', '1', 'like', 'input',
+    3, '1', TO_TIMESTAMP('2013/12/8 11:12:57.966000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.329000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('12fa38dd986e41908f7fefa5839d1220', '6e05c389f3c6415ea34e55e9dfb28934', 'create_by', '创建者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'createBy.id', '0', '0', '1',
+    '0', '0', '0', '=', 'input',
+    4, '1', TO_TIMESTAMP('2013/12/8 11:12:57.967000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.330000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('8b7cf0525519474ebe1de9e587eb7067', '6e05c389f3c6415ea34e55e9dfb28934', 'create_date', '创建时间', 'timestamp(6)',
+    'java.util.Date', 'createDate', '0', '0', '1',
+    '0', '0', '0', '=', 'dateselect',
+    5, '1', TO_TIMESTAMP('2013/12/8 11:12:57.968000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.332000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('56fa71c0bd7e4132931874e548dc9ba5', '6e05c389f3c6415ea34e55e9dfb28934', 'update_by', '更新者', 'varchar2(64)',
+    'com.thinkgem.jeesite.modules.modules.sys.entity.User', 'updateBy.id', '0', '0', '1',
+    '1', '0', '0', '=', 'input',
+    6, '1', TO_TIMESTAMP('2013/12/8 11:12:57.969000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.333000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('652491500f2641ffa7caf95a93e64d34', '6e05c389f3c6415ea34e55e9dfb28934', 'update_date', '更新时间', 'timestamp(6)',
+    'java.util.Date', 'updateDate', '0', '0', '1',
+    '1', '1', '0', '=', 'dateselect',
+    7, '1', TO_TIMESTAMP('2013/12/8 11:12:57.971000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.334000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    SORT, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG)
+ Values
+   ('7f871058d94c4d9a89084be7c9ce806d', '6e05c389f3c6415ea34e55e9dfb28934', 'remarks', '备注信息', 'nvarchar2(255)',
+    'String', 'remarks', '0', '1', '1',
+    '1', '1', '0', '=', 'input',
+    8, '1', TO_TIMESTAMP('2013/12/8 11:12:57.973000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 11:30:22.335000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0');
+Insert into TEST.GEN_TABLE_COLUMN
+   (ID, GEN_TABLE_ID, NAME, COMMENTS, JDBC_TYPE,
+    JAVA_TYPE, JAVA_FIELD, IS_PK, IS_NULL, IS_INSERT,
+    IS_EDIT, IS_LIST, IS_QUERY, QUERY_TYPE, SHOW_TYPE,
+    DICT_TYPE, SORT, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('53d65a3d306d4fac9e561db9d3c66912', '6e05c389f3c6415ea34e55e9dfb28934', 'del_flag', '删除标记（0：正常；1：删除）', 'char(1)',
+    'String', 'delFlag', '0', '0', '1',
+    '0', '0', '0', '=', 'radiobox',
+    'del_flag', 9, '1', TO_TIMESTAMP('2013/12/8 11:12:57.975000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 11:30:22.337000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '0', '0,', '中国', 10,
+    '100000', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '1', '0,1,', '山东省', 20,
+    '110000', '2', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '2', '0,1,2,', '济南市', 30,
+    '110101', '3', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '3', '0,1,2,3,', '历城区', 40,
+    '110102', '4', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '3', '0,1,2,3,', '历下区', 50,
+    '110104', '4', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_AREA
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    CODE, TYPE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '3', '0,1,2,3,', '高新区', 60,
+    '110105', '4', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:31:20.703000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('102', 'com.thinkgem.jeesite.modules.sys.entity.Office', 'Office', 'gen_java_type', 'Java类型',
+    70, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('103', 'com.thinkgem.jeesite.modules.sys.entity.Area', 'Area', 'gen_java_type', 'Java类型',
+    80, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('104', 'Custom', 'Custom', 'gen_java_type', 'Java类型',
+    90, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('105', '1', '会议通告', 'oa_notify_type', '通知通告类型',
+    10, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('106', '2', '奖惩通告', 'oa_notify_type', '通知通告类型',
+    20, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('107', '3', '活动通告', 'oa_notify_type', '通知通告类型',
+    30, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('108', '0', '草稿', 'oa_notify_status', '通知通告状态',
+    10, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('109', '1', '发布', 'oa_notify_status', '通知通告状态',
+    20, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('110', '0', '未读', 'oa_notify_read', '通知通告状态',
+    10, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('111', '1', '已读', 'oa_notify_read', '通知通告状态',
+    20, '0', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('f44b531b9b5747b6a4da2b793a7126ee', '0', '未读', 'sys_notify_read', '消息通知状态',
+    20, '0', '1', TO_TIMESTAMP('2016/3/22 9:21:17.711000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:21:17.711000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('66d2f238d68849fe8c6782e3e07330df', '1', '系统通知', 'sys_notify_type', '消息通知类型',
+    10, '0', '1', TO_TIMESTAMP('2016/3/22 9:21:44.792000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:21:44.792000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2b88b488b0ee4e8698a7bb142e461b94', '2', '群发通知', 'sys_notify_type', '消息通知类型',
+    20, '0', '1', TO_TIMESTAMP('2016/3/22 9:22:10.595000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:22:10.595000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('d3c186735f7b4d439e00f773e1493d05', '1', '紧急', 'sys_notify_urgent', '消息通知紧急度',
+    20, '0', '1', TO_TIMESTAMP('2016/3/22 9:23:07.572000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:23:07.572000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('79d24aea0e6d47ec9c2850df22eedcdd', '1', '已读', 'sys_notify_read', '消息通知状态',
+    10, '0', '1', TO_TIMESTAMP('2016/3/22 9:20:29.961000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:20:29.961000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('0965dc8983cf42cd845cb955b5930b08', '0', '普通', 'sys_notify_urgent', '消息通知紧急度',
+    10, '0', '1', TO_TIMESTAMP('2016/3/22 9:22:39.947000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/22 9:22:39.947000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '0', '正常', 'del_flag', '删除标记',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '1', '删除', 'del_flag', '删除标记',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '1', '显示', 'show_hide', '显示/隐藏',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '0', '隐藏', 'show_hide', '显示/隐藏',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '1', '是', 'yes_no', '是/否',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '0', '否', 'yes_no', '是/否',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', 'red', '红色', 'color', '颜色值',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', 'green', '绿色', 'color', '颜色值',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9', 'blue', '蓝色', 'color', '颜色值',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('10', 'yellow', '黄色', 'color', '颜色值',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('11', 'orange', '橙色', 'color', '颜色值',
+    50, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('12', 'default', '默认主题', 'theme', '主题方案',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('13', 'cerulean', '天蓝主题', 'theme', '主题方案',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('14', 'readable', '橙色主题', 'theme', '主题方案',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('15', 'united', '红色主题', 'theme', '主题方案',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('16', 'flat', 'Flat主题', 'theme', '主题方案',
+    60, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('17', '1', '国家', 'sys_area_type', '区域类型',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('18', '2', '省份、直辖市', 'sys_area_type', '区域类型',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('19', '3', '地市', 'sys_area_type', '区域类型',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('20', '4', '区县', 'sys_area_type', '区域类型',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('21', '1', '公司', 'sys_office_type', '机构类型',
+    60, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('22', '2', '部门', 'sys_office_type', '机构类型',
+    70, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('23', '3', '小组', 'sys_office_type', '机构类型',
+    80, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('24', '4', '其它', 'sys_office_type', '机构类型',
+    90, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('25', '1', '综合部', 'sys_office_common', '快捷通用部门',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('26', '2', '开发部', 'sys_office_common', '快捷通用部门',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('27', '3', '人力部', 'sys_office_common', '快捷通用部门',
+    50, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('28', '1', '一级', 'sys_office_grade', '机构等级',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('29', '2', '二级', 'sys_office_grade', '机构等级',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('30', '3', '三级', 'sys_office_grade', '机构等级',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('31', '4', '四级', 'sys_office_grade', '机构等级',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('32', '1', '所有数据', 'sys_data_scope', '数据范围',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('33', '2', '所在公司及以下数据', 'sys_data_scope', '数据范围',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('34', '3', '所在公司数据', 'sys_data_scope', '数据范围',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('35', '4', '所在部门及以下数据', 'sys_data_scope', '数据范围',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('36', '5', '所在部门数据', 'sys_data_scope', '数据范围',
+    50, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('37', '8', '仅本人数据', 'sys_data_scope', '数据范围',
+    90, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('38', '9', '按明细设置', 'sys_data_scope', '数据范围',
+    100, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('39', '1', '系统管理', 'sys_user_type', '用户类型',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('40', '2', '部门经理', 'sys_user_type', '用户类型',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('41', '3', '普通用户', 'sys_user_type', '用户类型',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('42', 'basic', '基础主题', 'cms_theme', '站点主题',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('43', 'blue', '蓝色主题', 'cms_theme', '站点主题',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('44', 'red', '红色主题', 'cms_theme', '站点主题',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('45', 'article', '文章模型', 'cms_module', '栏目模型',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('46', 'picture', '图片模型', 'cms_module', '栏目模型',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('47', 'download', '下载模型', 'cms_module', '栏目模型',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('48', 'link', '链接模型', 'cms_module', '栏目模型',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('49', 'special', '专题模型', 'cms_module', '栏目模型',
+    50, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('50', '0', '默认展现方式', 'cms_show_modes', '展现方式',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('51', '1', '首栏目内容列表', 'cms_show_modes', '展现方式',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('52', '2', '栏目第一条内容', 'cms_show_modes', '展现方式',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('53', '0', '发布', 'cms_del_flag', '内容状态',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('54', '1', '删除', 'cms_del_flag', '内容状态',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('55', '2', '审核', 'cms_del_flag', '内容状态',
+    15, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('56', '1', '首页焦点图', 'cms_posid', '推荐位',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('57', '2', '栏目页文章推荐', 'cms_posid', '推荐位',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('58', '1', '咨询', 'cms_guestbook', '留言板分类',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('59', '2', '建议', 'cms_guestbook', '留言板分类',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('60', '3', '投诉', 'cms_guestbook', '留言板分类',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('61', '4', '其它', 'cms_guestbook', '留言板分类',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('62', '1', '公休', 'oa_leave_type', '请假类型',
+    10, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('63', '2', '病假', 'oa_leave_type', '请假类型',
+    20, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('64', '3', '事假', 'oa_leave_type', '请假类型',
+    30, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('65', '4', '调休', 'oa_leave_type', '请假类型',
+    40, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('66', '5', '婚假', 'oa_leave_type', '请假类型',
+    60, '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('67', '1', '接入日志', 'sys_log_type', '日志类型',
+    30, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('68', '2', '异常日志', 'sys_log_type', '日志类型',
+    40, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('69', 'leave', '请假流程', 'act_type', '流程类型',
+    10, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('70', 'test_audit', '审批测试流程', 'act_type', '流程类型',
+    20, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('71', '1', '分类1', 'act_category', '流程分类',
+    10, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('72', '2', '分类2', 'act_category', '流程分类',
+    20, '0', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('73', 'crud', '增删改查', 'gen_category', '代码生成分类',
+    10, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('74', 'crud_many', '增删改查（包含从表）', 'gen_category', '代码生成分类',
+    20, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('75', 'tree', '树结构', 'gen_category', '代码生成分类',
+    30, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('76', '=', '=', 'gen_query_type', '查询方式',
+    10, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('77', '!=', '!=', 'gen_query_type', '查询方式',
+    20, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('78', '&gt;', '&gt;', 'gen_query_type', '查询方式',
+    30, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('79', '&lt;', '&lt;', 'gen_query_type', '查询方式',
+    40, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('80', 'between', 'Between', 'gen_query_type', '查询方式',
+    50, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('81', 'like', 'Like', 'gen_query_type', '查询方式',
+    60, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('82', 'left_like', 'Left Like', 'gen_query_type', '查询方式',
+    70, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('83', 'right_like', 'Right Like', 'gen_query_type', '查询方式',
+    80, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('84', 'input', '文本框', 'gen_show_type', '字段生成方案',
+    10, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('85', 'textarea', '文本域', 'gen_show_type', '字段生成方案',
+    20, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('86', 'select', '下拉框', 'gen_show_type', '字段生成方案',
+    30, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('87', 'checkbox', '复选框', 'gen_show_type', '字段生成方案',
+    40, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('88', 'radiobox', '单选框', 'gen_show_type', '字段生成方案',
+    50, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('89', 'dateselect', '日期选择', 'gen_show_type', '字段生成方案',
+    60, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('90', 'userselect', '人员选择', 'gen_show_type', '字段生成方案',
+    70, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('91', 'officeselect', '部门选择', 'gen_show_type', '字段生成方案',
+    80, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('92', 'areaselect', '区域选择', 'gen_show_type', '字段生成方案',
+    90, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('93', 'String', 'String', 'gen_java_type', 'Java类型',
+    10, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('94', 'Long', 'Long', 'gen_java_type', 'Java类型',
+    20, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('95', 'dao', '仅持久层', 'gen_category', '代码生成分类',
+    40, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('96', '1', '男', 'sex', '性别',
+    10, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('97', '2', '女', 'sex', '性别',
+    20, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('98', 'Integer', 'Integer', 'gen_java_type', 'Java类型',
+    30, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('99', 'Double', 'Double', 'gen_java_type', 'Java类型',
+    40, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('100', 'java.util.Date', 'Date', 'gen_java_type', 'Java类型',
+    50, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+Insert into TEST.SYS_DICT
+   (ID, VALUE, LABEL, TYPE, DESCRIPTION,
+    SORT, PARENT_ID, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('101', 'com.thinkgem.jeesite.modules.sys.entity.User', 'User', 'gen_java_type', 'Java类型',
+    60, '0', '1', TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/28 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1');
+COMMIT;
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f00183a7ad994a52ba744c19bccc8dce', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 10:50:43.322000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1397dbba504243bdb2f8b764243b9940', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 10:50:45.928000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ad5c54e85b85454f82acdac247259625', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 10:50:51.112000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('af4ab1c393b94cccb7bdc3308f03a243', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/20 10:57:08.306000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/cms/none', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bbd0fa9a183a4948a31257d0f7a99432', '1', '在线办公-通知通告-通告管理', '1', TO_TIMESTAMP('2015/5/20 10:57:14.384000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/oa/oaNotify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2dc5c30b271a4655a481db6286aa0101', '1', '在线办公-个人办公-我的任务', '1', TO_TIMESTAMP('2015/5/20 10:57:17.541000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/act/task/todo/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a30c3fe1598f4f45bcbea852fdadba71', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 11:03:28.795000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('952c48c0ffe845378ed35f56cc23d417', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 11:03:29.363000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e80b9aac7ab84fc59c7ccd4e17011df7', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 11:03:52.506000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('31be4b1c93a44f95be652f0644051a75', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 11:03:54.892000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('60fd3ad6a8544959b6826f3177652a1a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:44:10.805000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7379df981b9e46178504e8e5cd5c4211', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:44:16.411000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fa8f27af8bdf4d4fb33ae68b3a1c74b0', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:47:00.270000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('29bca08b11b44f4b8864632d10bb2f72', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:47:00.337000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c2769ea7b7f547e0bf596063db5ab7bd', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:47:05.155000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e6e8910994c349958e2f62bfe1c5d121', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:47:31.579000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f283b8dc9daf4db1b2ae8a3faa04d504', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:47:31.644000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b0d5a5812354440f9507aaccc6e1c5d6', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 14:47:45.790000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4bb70349372748479734b88850b05243', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:47:45.947000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b2195e8e14894ccb86034a35f64cb7ca', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:48:12.124000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a92bdb69c5384eb1b4bdcb6447e715cd', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 14:48:17.248000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1936951eb2174692866429d28b092968', '1', '我的面板-个人信息-修改密码', '1', TO_TIMESTAMP('2015/5/20 14:48:48.776000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fba403e2c78045d686cd0749b9586b64', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:51.721000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('07144fabd28a4d2299495d22f5a40f57', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 10:31:27.837000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('34aab7d0cf7942918ed381156df3bbf1', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 10:31:30.580000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a1feb67252494b62850bdc7b712ae602', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 10:31:35.548000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4babbc62894f4d5d98adde563620ece1', '1', '代码生成-生成示例-单表', '1', TO_TIMESTAMP('2015/5/20 10:31:51.343000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testData', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9c3f133685d9436aa7f87d1e55088a00', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 10:50:42.696000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f9e35efab314476d89e2ae481b4802b4', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 10:57:04.866000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/tree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f7cf845b068d461595fa9aadb736b6a7', '1', '在线办公-通知通告-我的通告', '1', TO_TIMESTAMP('2015/5/20 10:57:05.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/oa/oaNotify/self', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ab8010558f8849ab914c9c1eb1112c9d', '1', '内容管理-内容管理-内容发布', '1', TO_TIMESTAMP('2015/5/20 10:57:08.215000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/cms/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('279e38278d994a70a33758df344064f1', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/20 10:57:08.399000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/cms/tree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('df04944fcc6743a3b6e07f84eed1467e', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:34:45.357000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f4d24ba186e54734b5d4da2ef815cd0d', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 14:34:46.852000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4ca755c81dff418a9caf5e31f79bd498', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 14:40:01.423000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('570577cd246341f2add5aed5990a216e', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:46:23.397000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2e2e325c08454e80abbda438c4adb607', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:46:23.463000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1811ad980e50475aa2ff71fca5361640', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:46:30.269000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('48d61c0112b441c99a02a0306aad690b', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 14:47:57.798000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8b9498c97cb644d9af05715bdb8df126', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 14:48:49.817000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ccbfa682bd814a92a110e6a7569581e2', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 14:48:51.543000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6f5cf43b96a44eb480562e83549f932e', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:48:51.626000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d69360a2074f4213a87c50a403b39d04', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:48:55.719000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('250aa29a04f94c7e9189a693471f0c47', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:49:26.413000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9c73198339a3420dad30648ee8e79d10', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:51:29.311000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('06c4f1a6c7444a20b181a772cc317f37', '1', '我的面板-个人信息-修改密码', '1', TO_TIMESTAMP('2015/5/20 14:51:30.470000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bc45d7d0ae994fb69df2ff356bfce4b2', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 14:51:34.058000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8f37160930ba452a9cd150ee257a7e00', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:51:34.121000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('81a96dc38eae4ff3a16ae6373db6b0f7', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:51:44.446000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('771acea3af8a4d53adf81a807feb62be', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:51:55.978000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('739ee99315eb4ff382366379edfae197', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:52:05.783000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8832c20cc1d345acba34d3c9129defee', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 14:52:16.637000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0724bbd159164fb893d54303c3f703d4', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:52:16.694000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9955e2d850f846eeaff4ad4857600291', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:52:26.560000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3bd43d03cab740d292c53f786f53a3db', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:52:28.258000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f01943104df04040868b767007dac899', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:52:34.219000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('764df0c27d13432284369f8ba1a10204', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:52:47.262000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('97bff1089ba64798aeb1050647c5f515', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:52:50.613000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/assign', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cea934d576a34e3db9be5d0b224c455a', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:53:08.797000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('146d6228e9254e45ba4caacc47f04e25', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:53:12.447000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fa21a22b6778424a9185e0592cae9e77', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:53:36.882000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b912dcda96f84125a0003fb28b923692', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:53:39.796000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('eddbf8c727d84e7f8be3be70a4bfe42c', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:53:56.760000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b09d33a31d62407fb474d0648eecbc2d', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:54:00.727000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/assign', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('037bc7326d1b47eebfc75789428bd44c', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:54:05.694000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fca0be19bfac46d897490c3cbfaa780f', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:54:06.788000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cfbcb596831241a3aca75ecf0fcc5df8', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 14:54:18.220000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8eff1b70861f42a09ca1545171cc5dd4', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 14:54:18.252000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ef4d2b82270a4c9384d534f9e4e097f6', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2015/5/20 14:54:24.513000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7aff67f883b1411d87778848cc86235b', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 14:57:26.051000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('50e0b8fda93b4f939bb12a8afba175d4', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 14:57:35.704000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7ab1d47affb54decb5feeab64e0526ea', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 14:23:27.309000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('055dedbfcdc343f486ae68abcb65c98d', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 14:29:55.743000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a4afe7d0a49946e587c94874bab393f4', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:29:56.269000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('421d8810140f42f6a20151da8681e412', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 14:30:00.462000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('41acfaf101dc4a48b81c95271f7bf99b', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:30:00.725000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('820b477e149842449dc09a21ab1313d6', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:30:05.732000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8d1fe0a9a9a74b2d8dcf0533cde46a21', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 14:30:20.267000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('868d75d6b3354de6930ede11483ffbf2', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 14:30:21.661000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('297b8309a91f4ad9816cc8d270973dac', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:31:06.412000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9fa32ebd67f149f8a79b626aef9960fc', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:31:12.469000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('df7303904555423b8455580eb1afc24e', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 14:34:44.044000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a;JSESSIONID=2ea4d19d26434f28bb81e757bb394c5e', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a107218d3657409892ebef6b0a6194ba', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 14:35:24.226000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cd53e56410194f93b90aafc2fb92e664', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 14:40:02.010000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ea4338c55c384c859e444269e9758e11', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 14:40:05.174000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bf7ae9378065475090518d0f164efc29', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:40:05.866000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ec0cf47a6bfe4c65b5f637dad2559e3c', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:40:11.805000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3b11261e3d62420d9e169b700fe4e709', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:40:23.203000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4db1bab81bd74730bc9d9aa46c8c7ea2', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:40:55.333000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e9fab2b91b07422cb69d1ab9ecb096d0', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:40:57.821000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('df4e9d1439ff40ad801e34a6d3f318e0', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:41:25.258000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('597249b300d44e74b5935a52c6ff80ae', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:41:25.270000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cfadcde1a797445cbeb6ce5e0d92ccf7', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:42:03.842000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b813f736022642e5a2ba874fae43f065', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 14:43:47.622000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e53b04f6c5f6441191baed88cadc8928', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:43:51.659000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0b5b09e22a694ecc88685767d8c1c3af', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 14:44:02.083000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d8699e7f780d4ee4a53acc3d97af1231', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:16.674000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('990cb62ad8d2474e983822dd5015f503', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 10:17:12.855000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a;JSESSIONID=291be53e4a284e2a8d998548e1619016', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5f2af38508974bd0b52f8255d338364d', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 10:17:14.109000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a36b85351ba84778a19a5cfedc32208a', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 10:17:16.892000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bf8f8c3b85c242daa59f7f8aaccbf0e9', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 10:24:49.754000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('136b4d78da634946839949fa20018391', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 10:27:52.937000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/gen/genScheme/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e0c3ea318a9b4e6ab1b444884169efe7', '1', '代码生成-生成示例-单表', '1', TO_TIMESTAMP('2015/5/20 10:31:08.638000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testData', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('67cfcad2775a4cb797e0904018f5b255', '1', '代码生成-生成示例-主子表', '1', TO_TIMESTAMP('2015/5/20 10:31:10.849000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testDataMain', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('600fb33e33a54116ac64fbae93e7e5bc', '1', '代码生成-生成示例-树结构', '1', TO_TIMESTAMP('2015/5/20 10:31:11.622000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3dc507375cc34daf98dec8eeb2ed7ef4', '1', '代码生成-生成示例-树结构-查看', '1', TO_TIMESTAMP('2015/5/20 10:31:14.655000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2d0818ee2cd044bab8b3df4de4a57df8', '1', '代码生成-生成示例-树结构-查看', '1', TO_TIMESTAMP('2015/5/20 10:31:15.553000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ccd4f0bc29464d30a780c61a478dc2f0', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 10:31:27.572000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9ee3b07431814d178c00611887e49491', '1', '代码生成-生成示例-主子表', '1', TO_TIMESTAMP('2015/5/20 10:31:52.198000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testDataMain', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e5b47e71a6ca47e894869d1ffbfe863b', '1', '代码生成-生成示例-树结构', '1', TO_TIMESTAMP('2015/5/20 10:31:52.836000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1da094f3535842268a3490f33f007136', '1', '代码生成-生成示例-树结构-查看', '1', TO_TIMESTAMP('2015/5/20 10:31:54.826000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a137417b4c16462a8b7bbc2a5dc3ac92', '1', '代码生成-生成示例-树结构-查看', '1', TO_TIMESTAMP('2015/5/20 10:31:56.577000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/test/testTree/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('56ea18d6bc1f41eda1373a750427cdf4', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 10:31:57.954000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4a1659a89f7e42348c1c3ddd9e4b298a', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 10:31:58.257000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b962610187f649229c7c3f6ebf79fcbd', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 10:32:05.950000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dfe70f3be1dd44fcb7f33f4a7bb8e98b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 10:32:13.283000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f43c0273af0f43b2916a132c165a9792', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 10:32:36.365000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8224484248bb48f5bf0c5cdbd3586d1b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 10:34:15.359000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('16a9a56b095349f6b0a93cf1c5cb29c6', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 10:34:35.976000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8e7c06726a104704a27649d621120c3a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 10:34:38.552000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('20d6bf499965413280510c81480bd0e5', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 10:34:48.152000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesitetest/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c459544a1d10466ab4e74b0433042464', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 15:07:26.183000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('74a766a1c45643c383216e713a5b437f', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:26.242000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c6a4fbf253a44e5c8593050320e1b987', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:07:31.638000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3d55c38a9d5d4f539fba6d8096d83fc3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:46.712000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('592c46d9b5ed4520b82c69dd5ceb0929', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:07:49.732000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('72b9d55d365d43e595b1e5b4933c3d01', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:07:49.784000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('32714fc0d4c244528eb3a8cb73ef2148', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:54.318000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f17a55a5523e48e8b7adf62946c8b9ab', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:07:56.884000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('243404737c07433ab0e12794f98dd694', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:07:56.936000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('75d8ff26918444d9b8534befed27c57e', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 15:10:10.745000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('83deca25f16247568fc75d2a40d14b55', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 15:10:10.915000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d1d80cdf39494941bdc8f3f5f914ac8e', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 15:10:21.111000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5010278e81704cabbb4eb5d40540f01d', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:09:02.284000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fa7a1c6142af441fb13b32d53fe493a5', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:09:06.991000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5d23871e9f1848f6bd4e26b9203af077', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:09:13.400000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('21b9c8064c21475fa526588c3b012883', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:11:41.538000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('de5158af544f4e97a98e82bcf95c2ff7', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:11:48.714000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c36f5a598dae48b2875018c906a42549', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:11:50.298000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a2346edb78744f999bdfd55efdf71b78', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:33:49.125000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8041922d67d24ded84bbde5d7a2ba146', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:33:49.698000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e56666996fa648ad91bd7d7b2793bcab', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:33:51.279000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('217aa07437fa4bbc8ffbf795b9c1fac3', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:33:51.485000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('326a749a1b69420db57cff3c803c91bc', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:09:02.226000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('528d53b1646d4a0a9e4e312cca9873dd', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:09:44.754000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e1b3bb6bc4cd44aca0a1d8e1ef16ea63', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:09:57.305000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('30e2057bfacd48b4acd399413e866c56', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:10:29.830000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d6bd61e2ccc544a9862fb4949ac3775d', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:10:29.888000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c2adcd0558124b8381a406de9c07c7b5', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:10:39.237000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a5657fc1c2094c888436e7a4e9c69394', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:11:20.867000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('41076b759a1a4a9ebe8016cfe532f505', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:11:20.944000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('aa68c0b904014fe38abe645dec6f5be0', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:11:27.851000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7348b64cf8f3489ea06833a3d8e39a0a', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:11:39.785000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2ac2e02aa7034783a28cc0a58a1de6f4', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:11:39.958000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1a790f22a764492da8454464138695aa', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:11:41.476000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('993430e16636429bbd0467f6d7dba8a0', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:11:50.352000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f797a8efc87f4129bb280c1a7a9132e0', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:11:58.076000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2365b10db5404b7b997384ec131f3147', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:12:05.382000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fd84d4176b3240e499fbabe11b8088df', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:12:17.025000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f94914359376402f9630bdd19f5bb385', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:12:17.048000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8ad0ebd4f0df49cdb40d02fe8ba4509e', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:12:23.912000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f6dee0b3d0894a8caea59b806bf5df31', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:12:28.387000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ad707c394c7745d4a6d9fb6ba6a7edd2', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:12:31.393000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('58c9cdebafa24ae7b0360edc8e374203', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:12:39.277000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2de108875236400e9168f8f3edd40e5c', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:12:51.978000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('60f5fa3582f344a7aa9b32211da8f7d5', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:12:59.903000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/assign', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a7ab8527907b49cfb6d4c83a18404a86', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:13:06.924000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/usertorole', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('aa6e1b0704ed44d3aa360e70f01d50ea', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:13:12.598000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3cc31ee3ebac4770b5450ce96a3ffb42', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:13:14.331000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ede81631aee94c29b4fd14e7da7aa468', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:13:18.874000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('55dc8da756a846aeb9f700092c09d99e', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:13:18.898000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dc0cbac799044946843953ac275c85c7', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:13:36.819000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a5f9a7cc8bce4acb87cf9019790883d9', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:13:37.128000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f4c7b8dfa840425bad0d1197693be1e9', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:13:39.497000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6af89921e3c447b1a3540afe6a5b2109', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:13:39.559000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4d7aebb876164aa6a0cd2a76ddf11cbd', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:13:49.882000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('807df2da0e0e4ccbaf49aee49e2ce282', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:13:53.352000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('685a67503843487da4fb2602e4a85d33', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:13:53.408000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('13f768e9248b4b5c91540a720cd5446a', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:13:57.158000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b47537d02f28467fbdab1cd2e9728208', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:14:21.330000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bebd457a69244a058918d1e168df64da', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:14:40.114000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2dbe6de25e1348fea83a3eb36666b90f', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:14:40.170000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('10798b2583ad40328dc00cedaf51b60a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:14:55.382000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6d80c5a4a28441b8be4fb658eb182482', '1', '代码生成-生成示例-单表', '1', TO_TIMESTAMP('2015/5/20 14:57:42.050000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b00fc0c7f3c94c65837f77510cd4edeb', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 14:57:44.567000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('91a4c70871f24ef8a0363c16f52f0bfa', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 14:57:45.131000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('16b976436efc4727a31fe85c915599c5', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 15:01:05.353000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a50828603c2744249016a882faab4216', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:05.378000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('28a1c28ba1d24290b555327bc8246dc0', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:13.359000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8de8bd9ae7654a8da1cc1c60db93e186', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:20.713000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('14193fd50e564b76829156804c23f3c9', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:30.680000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('71cdc5fb37e2411b99cbdc811497da15', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:36.232000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1104ceedde8e478faffe18022b5eab5a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:36.247000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4a2fea9455d649b5a3c24b2ffffb505c', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:02:13.410000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('54bd22ff7fcb4db6a2a621540a319352', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:02:46.711000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c633b0d17ad44e72ac66afb3685e7d33', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:02:53.068000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('39512c93addf431ab6a9a6a40fe43b73', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:03:04.126000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('318ac7390e934afc9585e02ee0e1fbd2', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:03:10.148000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ca1152099261446cb736016df6f7d6f3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:03:40.992000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('be58e0eef4b3481793d4b505d61bc265', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:03:47.849000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('86ce273a138f4a10a407dda2863bce2d', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:04:53.151000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5494b749b18d419ba9cd632ed9cdde9b', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:04:53.209000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f528ca3df509461999b0599291dffe67', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:05:02.354000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bbbefe881d2f4cd4b12ca5c192dbd806', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:06:58.448000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('59f64747299f41ccbec1d8da4a0a9515', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 15:07:01.088000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d3323f370b6a433080500ac2e01cdeec', '1', '代码生成-生成示例-单表', '1', TO_TIMESTAMP('2015/5/20 15:07:07.590000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('989781bd5ccf4e3dabdf969a612f696a', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:12.136000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('df3a5dc74c0c415985c1c43934a0761b', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:13.223000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4869248975924146a37f48ad57a3231c', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/20 15:07:15.797000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ccd469642ffa4f3caf78bd51258aecc9', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:01:56.515000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dbdf4dd8e96641708b4de947272effae', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:02:29.652000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2f5ebeca022b428eac1dbe6d0a5eb77a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:02:37.033000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4d2d95adcc6f404d8f6940905ba3fc25', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:04:16.296000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('44ed3a08f3744282a2a6466f43998838', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:05:21.763000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2ab6d679d4884aaa9e5b30e30e4150b5', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:05:21.779000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fd55868df2c24beeae1d0644482a5471', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:05:21.853000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e4a6783dc42f487ba606f6294dfdf8a7', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 15:05:34.107000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cc82f47fb8284e4590a42f75efd08329', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 15:05:34.278000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('31d293708f3d4f91816cb88e2758fa41', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 15:05:42.467000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7734da52d77247e994ef6c685ff8afdd', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 15:05:45.433000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7078a0591ed444fa8b6e54f0bdef9881', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:05:45.492000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5c7b60dd3c0343ce8cdbdff9d79225c1', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:05:48.447000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('46e8977d06c743b996c0964d2872cbb3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:05:58.859000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cd5b3dfa45fd43c3ae4699b81c5a7619', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:06:12.304000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f40065368f2c41f8a8e24e2c58df71a4', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:06:12.366000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e82a2766c86d42ef82e9db8c0ef8615e', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 15:06:23.314000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/delete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bf9249c1e6ac4436aff176f8790fac88', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:06:23.372000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('539f8344d2af4053b4e6cd12f4eb9847', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 15:06:32.577000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('755802dba7504bb5ac2b7eaaa75ee013', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 15:10:21.178000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('baa63a6eaaca4f0f99ba0cf5c128c0b9', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 15:10:27.302000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ecf696fa6d864c51994e83dc74c4bab6', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 15:10:33.968000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('10dd503ae994474f9df37572d38bf26f', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:01:03.331000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5b55b8aed6774102b753c81cf00191c1', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:01:07.898000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('92e06068629840028e1db9620dcf3949', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2015/5/20 16:01:14.533000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('db4d5eaa3fa04cbda3b1b2eee182890b', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:01:14.782000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1a98df598640411fa9abd166d9f6ed14', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 16:05:33.772000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('505fdfa7bebc4c5ba51873edd6c33925', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:05:55.674000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('232aba1f133c4973b488b007e0b109ee', '1', '系统设置-教学管理-课程性质管理-编辑', '1', TO_TIMESTAMP('2015/5/20 16:07:09.549000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9e22b5abe01443928e9be397563749e8', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:09.576000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dc4cefb16500415c9ba6a22f8c69a7da', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:12.591000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8ec646dbf44b422c89a69d0e2eb96fa7', '1', '系统设置-教学管理-课程性质管理-编辑', '1', TO_TIMESTAMP('2015/5/20 16:07:23.688000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('81a79a1d781940f8bb6096c40aed2429', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:23.712000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('13b41a3fab4a4900a355dedadc4b1667', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:25.690000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('32f13d86826e4f92a9d7a8b94d5b6ff9', '1', '系统设置-教学管理-课程性质管理-编辑', '1', TO_TIMESTAMP('2015/5/20 16:07:43.416000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('634277547e0a4f8bbda97d4dca9cd8fa', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:43.448000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e88bd7f9c6704a74803b7eb36769461b', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:49.907000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('faed374453f24234881fc47894a916ca', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:53.744000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7ac84d319be049cfb89f8329f5e0f4e7', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:07:57.922000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c027a486b86740f7973a4307934c8429', '1', '系统设置-教学管理-课程性质管理-编辑', '1', TO_TIMESTAMP('2015/5/20 16:08:00.975000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('19953656e73b455da4884e894df371f5', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:08:00.999000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('67ed0885503b452888bfb45cd082c70e', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:08:02.545000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('eb138c1c38784bd98c056f0914f96867', '1', '系统设置-教学管理-课程性质管理-编辑', '1', TO_TIMESTAMP('2015/5/20 16:08:11.825000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d5cf215e67dc4c3397d386e4b8de3101', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:08:11.850000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('25dcaffa39d94168bd654f215447763c', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:00:50.148000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/tag/treeselect', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fe8d20fb3fb74e9e87f55483bbf7bd2b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:03:18.985000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fc6f73bb9e4f49559aa369565476a66e', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:03:52.314000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d2f20829e3324aeab117795591d2d0fb', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:03:52.376000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('564b1210dd73455788346a8889cba8d3', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:04:19.992000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c2375c41492543b39f7a1801b0439b4c', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:04:25.130000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a03f4bfd260145e8a23d9d30c7c97072', '1', '系统设置-教学管理-课程性质管理', '1', TO_TIMESTAMP('2015/5/20 16:04:58.710000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('21c0807f46904baf8da4f645ca307769', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:05:19.088000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8eb2b79d86b944de9da34a462dabcf02', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:05:25.798000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6c43b3172a6a43ecbcede2e3bf81a886', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:08:19.135000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cb4ce6a7288d4568bde4e04bbc846ccc', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:14:58.703000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5a14a12223834e899936d8d1d8641964', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:14:58.756000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('527f0e31483e4ce58386f155356a563d', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:15:10.150000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('104e16df19344bb1bfbd85b1a6d546f2', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:15:13.685000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d2f89904f12745938a0fd7f8f7216d3e', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:15:13.743000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('12736ed82b7744d59cda35cc1f6bb4ec', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:15:24.910000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('56ebbe69551f4f7eac81a623d4fd72f4', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:15:24.980000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a9cce4c587694180b15424df47241e76', '1', '系统设置-教学管理-课程性质管理', '1', TO_TIMESTAMP('2015/5/20 16:15:27.090000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ed9eafaaac3c4f838eae1eb20605b6d5', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:15:30.597000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('07797d2832b8412b9316546546d603fa', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:15:39.880000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5b59dd62a4e940ffbb877a5001b00938', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:15:56.302000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('aaaa21eb70514bc48de96c285448928e', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:15:56.365000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('88d9084fc8ac429cb8ee9ea4328d42fd', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:04:32.692000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e16466f0939f4d208494e7c41a97c801', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:04:32.746000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1f0fab406e1d4b6b93136b39808ffff2', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:04:41.961000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9ab6f4ddfa15498bad588acd81e7d892', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:04:42.117000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ab7eafd62b784ffaa4bdbefc22d15982', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:04:44.993000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cc264eb8e73b44a99694f8396a7b66c6', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:04:45.051000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('44c761ad607745eebdc11c533d768f96', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:04:48.492000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cec2a47f376c4f4d8e604561180fb10f', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:15:58.466000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('71ba052e2d7a410a9437cf0e40d5131d', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:15:59.587000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('00a8c670298344ad8aa74527387e2666', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 16:20:05.544000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0135e052a31b44789f786dbbf218c329', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:24:41.591000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7452755392c14045a7377f66e858a800', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:24:42.172000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('31720fa5066346f0853f863749127831', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:24:43.828000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9d3e7df85c894252aa5c0f74c2a2d44e', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:24:44.003000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f0d0273a4b0d4e67b97864f9b22f3032', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:24:46.079000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('76db709491cf468180207208bc99a163', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:24:47.522000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0657de4519a34343a26771cbd0306d1d', '1', '系统设置-教学管理-课程性质管理', '1', TO_TIMESTAMP('2015/5/20 16:26:02.243000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('743deb1c72104d448464816fa5524a81', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/20 16:27:12.911000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('111b94498d484adca3dc01a67c8ca19b', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/20 16:28:12.043000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7b05b5ae99944a3faf066c443746976d', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:28:46.577000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('009d651d488e4bb8ba174c972e571707', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:28:46.663000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c55abcd7d400437eba75b135465ae177', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:28:55.643000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('99e234813cd8466da3babfe44bbc85d2', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:29:03.492000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5268e3667e0c4c05935e6421d51ea5d4', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:08:21.354000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testNature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a9062399c4d649b0a88694e485a343d7', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:08:49.021000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('08a20f69281e48e49ade47f56013ab94', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:33:58.396000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6789b772860946ecb84a001e197fc3a8', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:33:59.612000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('47d5454a3ed74f869e5a78f5900066b1', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:34:23.257000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('06589e5f97b540ae92676e34ce4892e5', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:34:23.349000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4f0f33df0cd04486a4b78419bd1181dc', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:34:42.584000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d2655801052247c29cb9d5766828727c', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:34:49.747000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('da6f2f25515d42a8ba9459efd6bd2bd5', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:34:49.824000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7d35b0bc3ac64fd599f9139fda065ca3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:34:56.684000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('35a5e2c17523433cbea6e4ea3d3fafc7', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:35:01.898000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2f011f90f0a042b1a3e80c8439b3f3ed', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:35:01.969000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dfd5c71c37cd47d187d8df58dda8ed2a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:35:08.067000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('69d784cce1264777a9ebc8bb1b1dfdab', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:35:31.231000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9ca71a35d68e45d78b8bd96620a8512d', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:35:31.296000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6f3532b4d2eb4be88c30679a305f0acf', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:35:36.281000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8a31cb6d9c784804b2e4b1ec095421f0', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:36:07.117000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5bd94f5a9b134c078e0f1623d86cc05e', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/21 15:46:20.254000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9b895c75cf0f4d0999559c819ba7d1cd', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:46:24.987000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('71aea46e0b6c492f8ed30499048763a5', '1', '系统设置-教学管理-课程管理-编辑', '1', TO_TIMESTAMP('2015/5/21 15:49:17.997000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('04d3f6c303394a7b9e492f244600c7e3', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:49:18.040000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fb84892a2302414d88e720d7c88426fd', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:49:28.835000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8a83cef660264a339367664ae1371aac', '1', '系统设置-教学管理-课程管理-编辑', '1', TO_TIMESTAMP('2015/5/21 15:50:17.601000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7c2f2356d62745709354a96c258aa300', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/21 15:52:07.012000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('70f0698531a6489b9b95b4349115ebf6', '1', '代码生成-代码生成-生成方案配置', '1', TO_TIMESTAMP('2015/5/21 15:52:08.979000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genScheme', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e515e0a2643d412793dbd1430bf382ba', '1', '系统设置-教学管理-课程管理-编辑', '1', TO_TIMESTAMP('2015/5/21 15:53:01.423000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('25307e4807ef4707b8d777138496794b', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 15:57:37.866000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1e54e263221d437f8342eac6f039fe61', '1', '系统设置-教学管理-课程管理-编辑', '1', TO_TIMESTAMP('2015/5/21 15:57:37.881000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d1c85ca181f647f8b28e51a703374de0', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:57:37.911000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e5fffb7fccfa4f218d759007ae1b7e05', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 16:03:42.568000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8b4c6ed3b0174a25a23057477f3f8816', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 16:03:42.587000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0e3bedaa1d614b8cb231d9b156481caf', '1', '系统设置-教学管理-课程管理-编辑', '1', TO_TIMESTAMP('2015/5/21 16:04:08.694000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('55c1dcfc2ed94494923656070356b6c5', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 16:04:08.721000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e2efadb45767422e9926fb5e51e19ce0', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:33:59.700000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c08d9ff026734c7abd077dd629d5e88b', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:34:02.627000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d7b1d97c47734cd3933b3567b6678e85', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:34:08.128000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2a7681b5ede74b12909b957f0595f845', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2015/5/20 16:35:54.072000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e640bdcd6b08464985739a532f42fc16', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:35:54.139000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('adb219a5ad4f4ee899accc228a8b0722', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:35:57.675000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('650ec198d163406ea095f2a2a41301ec', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:36:02.514000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('78f6ad52f8004c15bd0a90bfd8f24f0c', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/20 16:36:07.188000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9355fd719a3d4675b8442981e8e1f8e3', '1', '内容管理-内容管理-内容发布', '1', TO_TIMESTAMP('2015/5/20 16:36:23.287000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d240b4ea712b43edac8c909098a1951d', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:36:53.970000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8ac80542ef5748e894931233297a20be', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:36:55.736000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fc726342f5584de08e81af143947f089', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:36:57.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7b475f4d94e643bc953b7b651de0ba26', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:37:02.841000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ee3ad54a8f4443ac847c1b84367154ac', '1', '系统设置-教学管理-课程性质管理', '1', TO_TIMESTAMP('2015/5/20 16:37:04.689000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cc89cfd45f39486da3c314241c58b711', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:37:16.441000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature/', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('146fe2187fc14ffd9bce5c2b74c4575b', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:44:30.114000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('11e29c95c6a04b3fa1e49f50f2c6676e', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:44:30.253000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d9db0c13b60f432ca38bcb8e3db3b4c8', '1', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:44:51.389000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9e0e6486f04047a5b69804d546daecdf', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:57:22.381000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b9ab3447532b407b93f8809e9578e947', '1', '系统设置-教学管理-课程性质管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:57:22.522000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('396c5cc121264e4e8f82bb4c95ee0c32', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 17:00:28.658000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('82aba3b1a571437881e3c68dcc947656', '1', '系统设置-教学管理-课程性质管理', '1', TO_TIMESTAMP('2015/5/20 17:00:30.465000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/nature', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('72f6d102ec744d689e38a86ca19ad14a', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 17:01:04.775000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2ef707a287e34c8b93d1f58534b6dfc7', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/20 17:01:12.368000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dcb62bae6d9c436288bed901db81a7fd', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 14:30:22.324000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('72a3aa23eb3843fe99edd4d1b53eff2d', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:30:25.251000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4a910ffbc324de49a871e0bc0e19046', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 14:30:36.303000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('84e34403e7b84042b93c2bcde9681f7e', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 14:30:36.589000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1fd2fca5da634f338d5d19c45f3c2b43', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 14:30:38.260000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a9d4f807dc8f4fae97bd6a9b64bbdd95', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:30:38.380000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6554665c56634d82adba4aa9e98ee42c', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/21 14:31:04.458000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f3873639248c467c81cfc3bd9dd54eb0', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:31:50.180000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dbd5699bae1c49bca3117d6ac353ce4e', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 14:39:49.634000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('53f7416bebf14e2487809a68c0b1394e', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 10:07:05.914000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5423efc73f534fb290c19fed6b098037', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 10:07:06.891000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f1e6bc254a684a1cbf0287fdbc942b03', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 10:10:32.727000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3e7265730099405bb42213a8dc8103db', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2015/5/21 10:10:38.190000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5741264246864a29a46da2bb9cd8c0a2', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2015/5/21 10:10:42.674000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/dict/', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('863b05049ac94068a490acfff0078e63', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2015/5/21 10:10:49.925000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/dict/', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2028db55b7cd42638af22dfc1cfda913', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:10:59.855000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ee9c07156d95414f8240d84a2ffa5e5b', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 10:16:39.245000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d6fb6667ba13421d9d358518b5ead7b7', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2015/5/21 10:16:39.319000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('45aacc6d81ac4320a4f50372f080a719', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:16:39.509000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('911cc49aca934fe5824fae13a4478a18', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:16:41.484000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('037cb266b08a4f18b73b54d926c81101', '1', '内容管理-内容管理-内容发布', '1', TO_TIMESTAMP('2015/5/21 10:17:03.655000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e19595c340a5489a8c5fb00d1fd7a2a6', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/21 10:17:03.887000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/tree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f7597f419e6e46c19198caac987b32f6', '1', '内容管理-内容管理-评论管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:17:05.667000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/comment/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fb7ed3cb7a8d4c36a7d1b6ee2b0b795f', '1', '在线办公-通知通告-我的通告', '1', TO_TIMESTAMP('2015/5/21 10:17:10.375000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/oa/oaNotify/self', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('649e4919727e42d283270a006d4b9384', '1', '在线办公-通知通告-通告管理', '1', TO_TIMESTAMP('2015/5/21 10:17:11.839000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/oa/oaNotify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d58fdf240a4249e0bfe6e91ff87c139b', '1', '在线办公-个人办公-我的任务', '1', TO_TIMESTAMP('2015/5/21 10:17:22.603000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/act/task/todo/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0abf91ea97af459fb0170bcbbb0061c5', '1', '在线办公-个人办公-审批测试', '1', TO_TIMESTAMP('2015/5/21 10:17:23.674000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/oa/testAudit', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d3df5e59d9ad4181b2274a1c1157e194', '1', '在线办公-流程管理-流程管理', '1', TO_TIMESTAMP('2015/5/21 10:17:34.788000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e913f9cdf7244359984f2b231b1dd183', '1', '在线办公-流程管理-模型管理', '1', TO_TIMESTAMP('2015/5/21 10:17:36.191000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c7746663b65640158db6271bd01007c3', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2015/5/21 10:17:43.834000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ca11ac4d7c234aab9d144987362b742d', '1', '代码生成-代码生成-业务表配置', '1', TO_TIMESTAMP('2015/5/21 10:18:03.587000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/gen/genTable', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4e3cffabfd4545418e7dd94838aeb9cf', '1', '代码生成-生成示例-单表', '1', TO_TIMESTAMP('2015/5/21 10:18:06.127000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6b534a15f6ef4b4484d85f7a2002275d', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/20 16:36:23.392000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/none', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a737858c8925423db9cc88a6e2d1fa0b', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/21 21:16:19.862000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('22ebc4e122a8439bb1ee47ac963cf994', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/21 21:16:22.867000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3f8ad28554be4077be0a972392dc8cfc', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/21 21:16:52.943000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6499a6845a0b422690e9ea111b58eb28', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/21 21:17:10.347000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d6517834bf4748a8b749f09351cee185', '1', '在线办公-通知通告-我的通告', '1', TO_TIMESTAMP('2016/3/21 21:18:33.947000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/oa/oaNotify/self', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('46a09f2685c14a1a8a9aaa4da0a7928d', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2016/3/21 21:18:49.798000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5172c4babd924890be1719f2846085b6', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:18:50.168000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('227936b8c00242b6855cf63655effeb7', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2016/3/21 21:19:33.238000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('150fb18f21b742b2863d9a7f5bda6334', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:20:18.258000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d6bac77fa2f44772ae7417f9de017d15', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:22:01.038000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9bdbdfed9ce24270b6a041dded1aca8e', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:22:06.990000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c5aa117eccf8407d97075d9a27757241', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:22:37.601000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c0f3bd86381c409c92b1fa1802e44eaf', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:22:42.039000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f08796051ddf45508dd41fb3ea67150c', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:22:48.747000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doDelete', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4c33523117e941ecab898d780c671857', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/21 21:23:27.323000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1304ca4b9bf94609a1c706ebb8499f90', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:23:57.239000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b577002c51a14583bc51465857a0c976', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:24:17.108000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7ad3e87d349b45b38ab4e43776a287b3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:24:47.970000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('78cabca4047d4b4dbebdc2f0888cf01b', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:25:32.083000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('81bcb1eda846445787e9737bcc3f4cc6', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:25:32.168000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('aa14b1fc580140638b830a179399de79', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:25:46.794000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4a255f4f261445c7b44ff5f790787457', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:26:01.640000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e758be67e89844aba634b16131a8fb00', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:26:01.729000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4c719d417b874d9b95aaee1cb95d50c6', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/20 16:36:23.586000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/tree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4207d86e49614d0a99fc1478bab0b898', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:36:27.089000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3c1b291f88684fd29c356cda62647227', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:36:27.157000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('42fa163262c749dabde0c3db999ea906', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2015/5/20 16:36:35.676000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('69a10f6ea0f74db3a27a1a51d86688e9', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2015/5/20 16:36:38.791000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/role/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('79c0ca41b63f43d58aec5e861ee5eac6', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/20 16:36:51.747000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1d92f0b8d7b945969c12d8e3d5886d68', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 16:36:51.904000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('13ca642fd4c14886965cc65061aa1f2d', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/20 16:36:53.882000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2d4849a70a9447aeac7ef13bcb247a56', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/20 17:00:27.232000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e22c38090926401cac81e54e77ada531', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/20 17:00:28.831000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b7634f465103473da54988ca79fa13a1', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:10:33.149000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a9a55223ca2a43a39a0bdae4ff3ae500', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2015/5/21 10:10:35.566000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('627126d8534b46e39e9316c798ef6359', '1', '内容管理-内容管理', '1', TO_TIMESTAMP('2015/5/21 10:17:03.738000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/cms/none', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('01084067ad0a44fc9db41859a13c6bed', '1', '代码生成-生成示例-单表-查看', '1', TO_TIMESTAMP('2015/5/21 10:18:07.484000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testData/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3263994fbabf4cdaafe0186cbdd3571d', '1', '代码生成-生成示例-主子表', '1', TO_TIMESTAMP('2015/5/21 10:18:13.465000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testDataMain', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ac608218478d4d69a42b64c69fc69b9e', '1', '代码生成-生成示例-主子表-查看', '1', TO_TIMESTAMP('2015/5/21 10:18:14.918000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testDataMain/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ca310df981024d858e79dc0693eb3858', '1', '代码生成-生成示例-树结构', '1', TO_TIMESTAMP('2015/5/21 10:18:19.839000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testTree', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('322873e617dd49ec8de0f98c4af879d4', '1', '代码生成-生成示例-树结构-查看', '1', TO_TIMESTAMP('2015/5/21 10:18:21.468000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/test/testTree/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6d871a1bddfb484ab05e0a3a6447191c', '1', '我的面板-个人信息-修改密码', '1', TO_TIMESTAMP('2015/5/21 10:18:34.132000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('719c3dd2e9bf451b8b147e340842ec24', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 10:18:35.192000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b0151532751f4ab2a4621891249cdaf8', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 10:18:44.171000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('447862bcfac6406f8ab18f0ded893bcc', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 10:18:44.253000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e958bb056e484f34af4f081e2681a6d5', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 11:25:42.336000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('52cbefdd8d3f4908bfdf5167c38e5c05', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 11:25:42.952000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c3c0d4f2057747d7993f2af0a96425a1', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 11:25:44.225000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5845e1ec613b443d8df331015b29d8ad', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 11:25:44.404000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3adb76592d824114969151dcabc4d961', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/21 11:26:24.099000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b399e9bd1f7646f792f447c027513680', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 14:30:22.924000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ecc5e2e04fc9475c8bfb08eba9ea4449', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 14:30:25.041000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('377b004db98e422aa720524ce89caa77', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:39:53.388000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('994022a7372642e094c663c973231b4b', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 14:41:09.590000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8330176df3e24964873b4cc1b4a223c4', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 14:41:10.859000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d5802d42e09c4cc89a143645bcb5fbbb', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:41:11.019000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('166d2249af224cf89fe3a6b6b3f8cfcd', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/21 14:41:12.716000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3e1fd9802acf40668360ac7bd08d8944', '2', '系统设置-教学管理-课程管理-查看', '1', TO_TIMESTAMP('2015/5/21 14:41:15.361000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/course/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c74d630c8e884e8c8199f8152f1ef223', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 15:17:26.528000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a7576a5133f748a5bab81bc36fda080a', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2015/5/21 15:17:26.567000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('41033664ec434725bbe458e2a4fbd14d', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:17:26.792000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bf300d5b61f94cafa9fc0641fba17d32', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:17:28.188000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b9b92880e2d743b8b6f38a5d1c15f5c2', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:21:36.542000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7e8e0dd991de4bd4a0f0dee2e3f468d3', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:22:13.553000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('15c8712f5cb4490eabd48a7a77d60e0e', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:23:02.429000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7e500f98e5974598b8380cd190191d82', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:23:51.540000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f50e4c767e374f2a86f8b1a2ca55bb63', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:24:12.429000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4fd4bb31e83e420db851dcd95740f59b', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:24:20.354000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0ffdb81cccd747b395f59bcce67defdf', '1', '系统登录', '1', TO_TIMESTAMP('2015/5/21 15:46:16.366000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b61d315c6d4f4dc0915d8c8ea69435a6', '1', '我的面板-个人信息-个人信息', '1', TO_TIMESTAMP('2015/5/21 15:46:16.628000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1e5ecd6f335d4f44a906703fd3022052', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2015/5/21 15:46:18.357000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ed3a25c94117407ba8262e7de3441601', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2015/5/21 15:46:18.482000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/user/list', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('70d2af70c0bd4f94abf6967d9de2387f', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:26:08.588000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('21d392cdff18473e85a92612a6c76f83', '1', '系统设置-教学管理-课程管理', '1', TO_TIMESTAMP('2015/5/20 16:33:54.007000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '/jeesite/a/sys/testCourse', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d15be6151312443a85703ef384a31dfc', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2016/3/21 21:47:52.903000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c537da8c2d474fd9a1488fffb191db41', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:47:53.097000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('33198aba9ccf4242a9e172253026a1e9', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2016/3/21 21:47:59.481000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e4b4995cb5564359a6ffe917bae02f9b', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2016/3/21 21:48:03.395000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dba9168e884e4cf78c0aadeeec7b3578', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2016/3/21 21:48:06.403000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('91170dd525e74e088c4d8efee577a98e', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2016/3/21 21:48:15.537000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3c63a42d2f1c4561a6c11fd060291c8d', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:48:15.678000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('68fcb6ce6d864bf786a637fc43a799d5', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2016/3/21 21:48:17.809000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8e110f8a90ed4a95bbf01e4d0e92c72d', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:48:17.978000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f0710e04693e4c6b98096b18478650ff', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2016/3/21 21:48:25.708000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('740ce4c07678469bb63b3dfadf360dc2', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2016/3/21 21:48:29.264000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('59d3b62d82f649a08fd2e0754e098707', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2016/3/21 21:48:30.227000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e285128408814945b5a43076bd8bdf97', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2016/3/21 21:48:31.305000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a9394c1a878a4c8eb7965870ee809963', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2016/3/21 21:48:32.047000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('901f49a247464072a5e897ba53b5dbee', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 9:12:29.927000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d3011ecf716042dd95d15d773c7e260c', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:12:32.017000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('29ee45b989964e188c7a095445e26be5', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 9:15:30.093000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8d872c4e630f4ccb82d8adce96fef44f', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:24:34.815000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f289855773b542289c762d668aa8cda5', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:24:49.936000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('94971135e1e0441abd3be86bf7c93acf', '1', '系统设置-机构用户-用户管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:24:52.868000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f6e89dd1692648e68a9098a16cad21e3', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 9:28:15.458000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9c664705e2f049639238fe7a8b059e2f', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2016/3/22 9:28:16.269000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c01081c2f2a448d5b5ca2b4ea101885c', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:16.618000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('15219ae128d34d809c8d02a0111e332b', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:23.517000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d3bfc818284440e4b51c2820851589d7', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:26:20.688000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('16e8151a25734afcaf9394b0ca6b6042', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:26:39.788000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5925c1fc723d4d989dc6d4f8950c32d0', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:26:39.886000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ff78a161451542819596f89e47d6cc7c', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:26:49.069000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('95e377f34ced4cdf94de7085521bd4b3', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:26:55.832000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f99b7b855e414d8bbc9a2b0fea56a621', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:26:55.948000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7e9672f582b541e798a35d7ac282419d', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:27:05.003000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6cc1ec82f329478c921f650dca21b71b', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:27:42.833000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8393e58ff5a244cc9566fd4359e63c40', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:27:42.923000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9a7a6e1ce4bf4c2ab990c399bc6747fd', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:28:57.992000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9dc7387a933648f2b62793bdd17793d1', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:28:58.097000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('69b49eb5421b47678ec90bc706ebbebd', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:30:39.126000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('52c94bebf55a4ed7a8aa304d81e1f9ee', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:30:59.163000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7922b212f6714dd5b4a6d242a5790d56', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:31:02.569000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c45c3a97382941e1a8c98e3f8e08fbc0', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:31:07.166000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5e2b7a155eb64aa08e768d4221a583b9', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:31:16.213000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('14861585fb134fdf9a2f8ddcaea6f7df', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:31:33.831000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0f4a008370164737a873eb0031cf1e12', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:08.823000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('755a8abb60e042e7930a0f4393d118b9', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:32:08.938000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6d102069b98b4de4a8e3fa552702172f', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:19.523000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ccedc2c97a1a4967b2813c5a38fee23b', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:32.896000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a7993a15e0ad4fddafdaa81448bb945d', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:47.089000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e8bc2ec257ec4da5b143aa15df446a35', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:01.232000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6b1294c95d13406190df7e7f64b929d3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:19.327000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a8df5158e6f4414fa479966309334832', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:33:22.540000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('18e3faedcd314f88a51597d70d3c803a', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:22.673000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('50879f80c21549f59c4716f2484640e8', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:26.312000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('98c7cc3aa4654e21984690587958af4f', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:33:39.181000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f9a961b30077436e99942ed4f024bbd4', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:39.294000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4752b60ee9354f4e82e5bc3825b4f4d1', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:33:57.545000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cf5707b56208422987d70879d46b9af2', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:05.199000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1a1e9bab67824e3da1535ddd063a74b6', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:34:10.114000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c1c18aa9ecf64cd7b59a2ca365ed6f8b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:10.214000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1990d4b5eacc4ed589a5c1b5ee5b2c5b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:15.935000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4c803e6d85014587817aeaaf2ec82911', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:34:23.702000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6b242036d36040be8013769b9d49c235', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:23.806000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b600d5783d5040b4b791214a1f508d96', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:26.127000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c48983af0ff5446ba5747c1a747c075b', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:34:38.821000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('76a60e4f3b80444c8df7964a0b040911', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:38.941000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f580f9f0543345dba48ebf43bf871af9', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:42.461000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('936c9aa80caf469e9e6401e452e8079c', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:34:56.833000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4777e16e3ba54c08a90e46e0d9968b6f', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:34:56.946000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b87dc929cc6e46bd93bc89c60386a399', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:35:28.462000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c6f3e1b172a044f7b7044a2ba6cba66a', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:35:54.547000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0a0e15c6e82f4a618951910d4ada4f12', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:35:54.668000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('99b41ac22aa1442ea0919e6771f5c28e', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:35:58.459000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3c370eb8bce94e019bfc6a3ebc6d887c', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:36:22.976000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('753397191021446c920029f9008072d8', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:36:23.069000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('32a60e7ee6094cafac966fe45abaa165', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:36:28.278000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9fae4927671b48d2a53e7138d42d195a', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:36:45.614000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a2dac5cbd9604461a4bfa711ce68895f', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:36:45.764000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9cdf7e7e36de4910909daef2ec196b7b', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:36:53.276000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0ab78d4fff004c10a2ac89b87d9be2a6', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:37:14.738000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('80c8f170d1c048a893c20a98252618b1', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:37:14.873000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4f82f6b7de154942987686ae14031847', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:37:22.390000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('24cfcec8627f4b869eef5681fba62f0f', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:37:35.660000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('567123e13b3747b5a3e532d15f54ee62', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:37:35.772000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1a39d2aea9704645800cb39bc20836a7', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/21 21:47:33.336000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('87aee6b51e704c689348cca65e20a133', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/21 21:47:33.848000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('16f82dcd63dd4685885be47d65949add', '1', '系统设置-我的通知', '1', TO_TIMESTAMP('2016/3/21 21:47:40.703000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/notify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cf3cfc95c57c4013aaeedf11efeee209', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/21 21:47:45.487000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2d2ccc2bc1af4cb29b23c3df416dcbb2', '1', '系统设置-个人信息-修改密码', '1', TO_TIMESTAMP('2016/3/21 21:47:49.108000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b6c1abc997a74f4fb3060fb7791e828a', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:32.500000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a291e709713346fcb4f7d8e2db0712fc', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:35.859000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('28ea7be38eb548629542cc9ee7fe9183', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:38.899000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cf2b2c07211c43fca2037e760484a2f5', '1', '系统设置-机构用户-用户管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:29:18.459000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8934a405f4b44e2091947e97c63cef9e', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:18.521000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('94879139e0924384b9bdb132ac6f8bc0', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:24.165000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('526eb8d435f0455a98cc7a7c662254bc', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:27.870000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a40a8e3843c7427ca1052e5cefa33498', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:31.990000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a434d86a3a504f0e8244cb2a3049061d', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:38.065000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3a478d6e052c49cd8ae8009862789ab3', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 9:29:43.232000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4de7e68163144ab796d4524b8a89c1a4', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:29:43.655000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('10db09f0ca1c47819c35597ee9035549', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2016/3/22 9:29:48.083000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4c98a40306494959bfeab0ebb0052640', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:53.936000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('84c0cda8b5d040fe83d683b6d3fb11ef', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:30:57.903000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c83e7ba3e16748cbb07a0d9c1019d738', '1', '系统设置-机构用户-机构管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:31:00.478000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d0f89270337c41069f57314b0ecda06c', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2016/3/22 9:31:00.579000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b6f11620af3b41369af978f27703360b', '1', '系统设置-机构用户-机构管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:31:07.429000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/office/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b484205fd92140f1a330eaae298f3562', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2016/3/22 9:31:15.225000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('81131b90870e4ecda5f04cf8ef07ac6c', '1', '系统设置-机构用户-区域管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:31:18.852000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/area/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7e3b207bc8ba4192bb0bd7b686bf793c', '1', '系统设置-机构用户-区域管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:31:20.721000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/area/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bc1926bbf5d541d482d25a7792446ea4', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2016/3/22 9:31:20.818000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('02147ceb72054a6890975e7ddc92b37a', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:13:29.482000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('30f3b390fbc944f0a3549346116eed31', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:15:09.369000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ad492c4f48a54621b498dca2f80703ee', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:20:30.136000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c7f2f1de9e2441739007a32fe6fd4ea8', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:21:00.754000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cc476c871cbc4a94a6bcfafb44dad0a5', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:21:17.731000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('46333676b1974c5fbcce7bf4d6cffe92', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:21:17.849000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('168f542ed174494f9194cf80ab94e3fa', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:21:26.245000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('255950bc90a04f8cb82504658d755089', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:21:44.820000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('664392c0faaf4dfe80ce6f73e1469066', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:21:44.883000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c51d756130dd41a7a80f474dcd078c0e', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:21:55.148000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('61fa73d3a7a74ab9829db170983ae7fb', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:22:40.022000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8b62cf0b87cf4ecf90e39c9166612df6', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:22:47.790000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6a27f132cb7c47498c021369c54db75c', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:23:46.498000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4789a3ff2184f9b9cffa69859c1c3de', '1', '系统设置-机构用户-用户管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:28:45.858000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f142db3c5ac64b41b7f222d4b237f43d', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:45.950000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('087bd1de380d4f11ad69676ad2700422', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:28:58.842000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9a9a5f9a01274a2599ee81f564ce12b4', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:03.112000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('644af3c90e194f739407e0a196db3639', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:07.542000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e56fd48964504cb4b153ddc97108b67c', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:29:12.195000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8b0b6150edde40c48f77bd11e21e7e2c', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:15:31.368000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('459997e815184be981da934315a77361', '1', '系统设置-我的通知', '1', TO_TIMESTAMP('2016/3/22 9:15:50.193000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/notify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3f77da192ea244ab99be3c2e5350461d', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:16:04.625000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('feba5cdf965a4d1f826a890066ebe841', '1', '系统设置-我的通知', '1', TO_TIMESTAMP('2016/3/22 9:16:08.058000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/notify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('12ae311b5fcc4f6cb0ffb1084ed14fc4', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2016/3/22 9:19:47.262000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6c7e1c68ae4b47e082810148121f0a29', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:19:47.603000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1f491d2454eb4364a569878760e63dee', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:20:03.213000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('067110a729854eb787b890c6992ecf57', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:20:30.025000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a7f5f33bbcc14d02bbfa8bb5a5c60984', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:22:10.603000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d5800b4d78814bc599f19ca651dd1e53', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:22:10.661000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('88108cc2c8134d9f93fb02e078fdfcc3', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:22:22.139000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e66307acb9fc4c47ae813503b02231f5', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:22:39.968000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b02ec5f66be844c5b574d80257f038d7', '1', '系统设置-系统设置-字典管理-修改', '1', TO_TIMESTAMP('2016/3/22 9:23:07.579000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ec12cfa6bbec4f90962391db62acfd2d', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:23:07.656000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('18934d0972074908ae21a4eab14727ae', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:23:36.595000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('47b60729b1fc433bbad8bf96fb429d22', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:23:39.192000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cbf13fd3c6a642a79d7ab20e5367d08b', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:23:52.998000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6446a33e9ef94da9a913e92dbd6c0c55', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2016/3/22 9:23:55.536000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d14cd560c5674692a27fc536639969d2', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 9:23:59.023000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3e3284e0e60545069effcc156fcc15bc', '1', '系统设置-个人信息-修改密码', '1', TO_TIMESTAMP('2016/3/22 9:24:01.223000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f90b8d96f84e455fba83710c8d7b1744', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2016/3/22 9:24:21.273000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5e60b032542543f4a49de9057c67f9b5', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:24:21.550000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f83cc2ac79934ca0afb2da0fc4085f59', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:27:22.105000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('112e4de5c09242d6b580dd479353b21d', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:27:25.122000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e1f8820bba40467897f55493b87f9f24', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:27:56.852000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f7da60ae575d42a7be9c2cf0e177f704', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:28:28.887000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('663eb716452a45d09ca9b18c6cdc1445', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:28:28.992000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fa5e8c78c706490994bad056d2b7f2eb', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:28:44.432000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4ced31c53d5f4785a7271cb373e5f139', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:29:29.035000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5fa5d364cb4d44399a317c9b61792dd4', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:29:43.634000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e1c4189408f4466ba2b5129f38ff68f4', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:30:04.847000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('942cde298cf2499dbd7899a91070c9d2', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:30:19.819000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f87980a7a8dd4f1b8348e9f27eab0ee2', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:30:19.921000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3cb44424f713491ca0716d26b6e712f3', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:30:24.364000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9295256d482347a3881191fe3e55bf61', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:30:39.021000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f8a93e8bd70e40b188c7900c0f11268d', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:31:41.202000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ade2b7a480e7486e95197ec116d79c80', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:32:00.184000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/form', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bc0cfbed38bb473fb605dd5f7db6a79d', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:27.242000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('79e29f932d5b4478876f159371acc099', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:32:40.826000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/updateSort', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a313d2c6c5ee4ccb90c8202c9a5de619', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2016/3/21 21:33:05.823000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4cd2f0d7df9743b6bf2133f12378a94f', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2016/3/21 21:33:05.937000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('acdffaa05213409da83ea89d988bd80b', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/21 21:33:39.121000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/doSave', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('628330920942429484a440ddefd06fff', '1', '系统登录', '1', TO_TIMESTAMP('2017/8/9 13:12:11.991000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1ad7766050634369bc4b2a43429c0265', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:23.886000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c606a05c84e8413ba79295af57d1d66b', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:24.321000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2e9b72486174428c832e114fbdd049ad', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:25.392000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4e588c51dec84c719495ea4df2150158', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:26.827000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5adf46821bba40f197456d2ff6a2e532', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:28.055000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8d290c03e4d446d59c74b4446429a505', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:28.971000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('954f55e6ef2e4d40bfca734fecdd148a', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/9 13:12:30.225000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('43e02b770d094a07b459dc53d9ec6fb5', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2017/8/9 13:12:35.820000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7562543516b24d4e9f5e3cea2f89886e', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/9 13:12:36.917000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1b0767a900fb40e8b8b3265ad015581d', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2017/8/9 13:12:37.746000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7283cd6576b747b998419a5c12f81833', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/9 13:12:39.528000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4623e2c205124abf87e4612aa200a556', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:14:06.411000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('42dd916477914156b48920cea6352329', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/9 13:12:14.950000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d0fc7852eb24443b9aaed267260ea295', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2017/8/9 13:12:21.851000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f87c55baa856419984d0856140a38a48', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:22.098000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0acc05f08d7f43c29b03c4eb90452724', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:24.812000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('334a03f120984183a230c35688990867', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:26.285000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a2b5b7e5927d4afc80b22240d7eb83e6', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:27.556000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f2ba9e06afac414ea680bc37bba0d2dd', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:28.489000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0fcf2ff39a024ed584f05ce3dd90240d', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2017/8/9 13:12:40.696000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e36a6ed5f900434f927bf17c10b96324', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:12:40.786000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d35e763d6212467caaf3673455972349', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:13:11.148000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('623d1ac241d74786865867d1116556a6', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:13:28.193000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b091a6d31d6d4063b6bc9f34fd78c2b6', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:13:32.617000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bdef5e3a3d624bce9d8161ef5e2cd9ca', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:14:06.192000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e2896ae347b542e4bc79dd216a8f6fff', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/9 13:14:07.621000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('22d26a88f72340058d2db8d0a73a22f1', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/9 13:14:08.766000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b5e36105b2d049e198b8529be3192a29', '1', '系统登录', '1', TO_TIMESTAMP('2017/8/19 14:12:39.698000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a;JSESSIONID=d53432ea7f49425eac83cff1291096f4', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f9f986c4d76f46298423ee37cead8a53', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/19 14:12:45.133000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7877e54205d84fc5832cb31ab7d0c4f9', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/19 14:12:48.817000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b0a559ace0e642a9a0bdf3e0d6c15b97', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2017/8/19 14:12:51.066000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dcb97e06ab77401d9b7adbfcfd14437a', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/19 14:12:51.680000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c38011f9cf2548e68a78e0710e247b5d', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/19 14:12:53.553000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8a7cfb62d1f14079b0d13959d661afba', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2017/8/19 14:13:01.241000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f2e3208ee7f34fbeab9f8665c66dc0c7', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:01.715000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5644b389cb234fc8a4e00d35a338fd12', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:03.200000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('339eea4a314c4d7bbbbc9bb4cdb37df1', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:03.689000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d5e0d28de6604037b22d0df2518ced2e', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:04.183000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f4c0c36dab834279beb15266a0e01950', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:13:10.979000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7ad1e080223142cfb0f7735d819db472', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2017/8/19 14:13:15.551000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f93bea609c2144559cdbe94734ec18ca', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:22.205000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7c4f293dfbfe4051b0b46736df612f4a', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:49.697000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5816c8a57ed7497e8d04b3aec1a68364', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:10.550000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('040b7acf51694230b85077bacf1f4987', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:11.521000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e02bc6c5de2745c5abab07699b3609a5', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:14.040000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1604c1c17e2e4571a6f1fd1c9032f2d6', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:15.674000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('711ee34eee3e4fb1b83ce3ca18968ab9', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:19:40.698000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4f5bb5936f2416898d5eeec85913441', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:19:47.478000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4689240a998648e5b85c892dbb0f26ab', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:19:52.352000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('18b2bce8e1b94545ba280abd9e547518', '1', '系统登录', '1', TO_TIMESTAMP('2017/8/19 14:20:02.810000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ec2e6381e55644f6a9b7c088254ed137', '1', '系统设置-日志查询-系统更新日志', '1', TO_TIMESTAMP('2017/8/19 14:20:07.181000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log/updateLog', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e5966974bbad46f5b548e261d3dc4618', '1', '系统设置-日志查询-系统更新日志', '1', TO_TIMESTAMP('2017/8/19 14:20:09.936000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log/updateLog', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6b625e76c7f14e15a8133a21a8622894', '1', '系统登录', '1', TO_TIMESTAMP('2017/8/19 14:23:13.698000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a0ece90943104ce8b30b7a2b113b4d00', '1', '系统设置-日志查询-系统更新日志', '1', TO_TIMESTAMP('2017/8/19 14:23:16.071000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log/updateLog', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9da3e094f7554f8a93ff85dbc578e2d3', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/19 14:23:25.816000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6466387108174162841d791c7bc9ec66', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/19 14:23:33.845000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('383a9f8b0eb249149b8c02ced827bd90', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/19 14:23:34.514000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('38b3f9a08b0642b8a205ac14f2390137', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2017/8/19 14:23:35.661000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7878e5ed3ae34eb480c2a48e62382d28', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2017/8/19 14:23:36.112000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3b45d4d56358475c8df8f98f985a4a8e', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2017/8/19 14:23:41.043000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('28afc26e244c4e3abbe5458a6760833b', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:23:41.408000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('61420f78f643431ca8760129cc2a9bf1', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2016/3/22 9:31:25.169000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6ced122ded90407f8f9c9953e2e9b2fc', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 20:38:51.738000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b087b34300924dfe867e45c1d977524e', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 16:46:22.071000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cebd136e48c9426aa561513628a14ddd', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 17:50:41.241000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7d60e51c759443a695a1243ef01c21a4', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 18:23:59.603000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a4e988a1651a4aee984179ae55875430', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 18:45:41.774000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('efe01b80dd6b463eaab6ff4a568f563a', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 18:45:44.882000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('af0dd42f337d455393012ed638d57017', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 18:45:45.474000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2a03e9d21a364b40be07aaa0e8cf77ea', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 19:00:17.220000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d86ca77cc0414d019de6195ec25f0832', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 19:00:21.113000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('823a447670c34d68b8c6a47725116f98', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 19:00:21.623000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('401701b30b694bba83463d4b31eeb404', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 20:38:52.476000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f66007f4ccfb41ca98da799f8a7d9b7c', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 17:50:15.783000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4310ad7f65f49439477307e4593f6eb', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 16:46:24.272000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6d9eb904ca5f4a05b20008719a4c9fa4', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 17:50:10.271000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1c84d3ef9eb74d91989ac0c73649cc70', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 17:50:39.983000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('53fe670cf9cd4a5eafd5ed218ded810a', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 18:23:26.704000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('405ecf6f1dec4ddb9367cdc4cce46c56', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 18:44:40.367000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ff228cffb091498f86dc39a31d27b9d9', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 18:45:01.609000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('95db12a0715c4e8a9e216837f17f362e', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 19:00:16.389000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2ae38f4e66f8470b87ac4b808690d862', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 19:51:41.201000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a;JSESSIONID=e5078d2f4cf14f78ad5c8616b22e832a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ae63653141444dab85e0eb3f2368ad64', '1', '系统登录', '1', TO_TIMESTAMP('2016/3/22 19:51:54.629000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3cc30706c83e4b0ba806d57094edddf3', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2016/3/22 19:51:55.133000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5f21a4bbcf704f3bacbe2889a308aaff', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2016/3/22 9:31:26.644000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c5c646731a1c4ae5b0a4eeaa7a2feb4f', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:31:26.792000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3db03f2fbbcf4b269739fc2cb203e4cf', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2016/3/22 9:31:29.752000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('5dc003ec089643cf8a94ce37e8208b07', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:31:29.844000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/dict/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4f221bef6984ecfa3026ff4ff2e909c', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2016/3/22 9:31:35.597000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('966c7f5d69a94b65b0887f37a6322729', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2016/3/22 9:31:35.662000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/role/searchPage', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8985d605e50e4e2aa7304efb8994f97a', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2016/3/22 9:31:37.010000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('99501f0b72594187b7bee33c427024d5', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2016/3/22 9:31:41.241000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('72d9edee026044018c5b6ab8f574002f', '1', '系统设置-我的通知', '1', TO_TIMESTAMP('2016/3/22 9:31:47.125000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36', '/dhc_bd2/a/sys/notify', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8cbcae862bd14c8298e9f5e6b61207c4', '1', '系统登录', '1', TO_TIMESTAMP('2017/8/11 10:42:17.298000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0affaf0c0194433db4bf196f8d63535a', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/11 10:42:20.315000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('06fc0f75e82e42b4a238c04e28a85d18', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/11 10:42:24.046000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('74c42ef34ee2475b9324ac49f1779743', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/11 10:42:25.253000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d85c3d10ac614ada9cdcda1a5a42c7b2', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/11 10:42:26.191000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b2d52a8bf4b541b9a761c6a42758e3de', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2017/8/11 10:42:28.225000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('49dd5448ca1d484a90b1ec5c29806598', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/11 10:42:34.722000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('35fe5161097c49f4b6e06d1cf3350ddd', '1', '系统设置-个人信息-修改密码', '1', TO_TIMESTAMP('2017/8/11 10:42:35.475000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1b96617a37d44b27998524bcf0cf4b6d', '1', '系统设置-机构用户-用户管理', '1', TO_TIMESTAMP('2017/8/11 10:42:37.291000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/user/index', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('724aba5a99e745eaa51b368c1a0fe299', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:44.753000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/role/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('d20b862b3338456ca7f32b1a237ceebb', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:52.239000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('daf1f75686b3435b8938b60559dda8dd', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:52.788000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f50194ae67a44f96ad27284225e1e017', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:53.026000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('63aebdec45cf4fbba84ab7792281c7b2', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:54.573000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e77b25abf898408d8d1dc056f28db70b', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:54.991000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0ebd7d93fe7f4ea28c8431cb1a157a56', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/19 14:12:47.872000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('29c0caf3ecda4e209628d3c07ce41013', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2017/8/19 14:12:49.852000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b1c126b9231e4115b98d7b5d8d7f06d5', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2017/8/19 14:12:50.472000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('a5779e9f243344fa8e1093b2247830c4', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/19 14:12:51.333000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8995609bcc52409993a3a897dd382fe9', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/19 14:12:58.651000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bb8db5d5f9234bdca7253eef63a00801', '1', '系统设置-个人信息-修改密码', '1', TO_TIMESTAMP('2017/8/19 14:12:59.619000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/modifyPwd', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('9d2b10c4c700425db31fe536f95ac2e8', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:04.682000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('843a0d9cdf1440339b320e65c052e99d', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/11 10:42:26.828000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('22779fa8b1be47c4a42db1c5f1e02106', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2017/8/11 10:42:27.320000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3a23376482474490b063d821898043e1', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2017/8/11 10:42:27.774000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8f8004d79d91405d9c8fac4405b20234', '1', '系统设置-机构用户-用户管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:37.487000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/user/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f8731f7f55fe417892116104a9d22dd7', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/11 10:42:38.590000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('edd41cca681e42d9bc7cc1245dd01a93', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2017/8/11 10:42:39.558000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('72d827fd766e4666bbd5746462f10b34', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/11 10:42:42.461000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('64bcbd37869c456bbe8e224dcbdcec15', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2017/8/11 10:42:44.664000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1f12af9c505a4ae086acde331c1ab5b1', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2017/8/11 10:42:48.472000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cf3dc8b2007e4478b836a02cc28efec8', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:48.558000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2da65983b7da4721a7994a471bb50a98', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:51.452000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('96d5252c2d83453b933ae1cc5747ed78', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:54.791000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('3fe14bf005cf4e38a9537a5c5c1dd7f6', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/11 10:42:55.174000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('4e4f826a93a146f984034a019e17b5d2', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/11 10:42:58.265000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('467e5bfc444a4ed3a1c687e18266e915', '1', '流程管理-流程管理', '1', TO_TIMESTAMP('2017/8/11 10:43:37.780000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('16e01b5ce83d4a0c896be4c94fba8a94', '1', '流程管理-模型管理', '1', TO_TIMESTAMP('2017/8/11 10:43:38.544000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/model', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('465df1a46c6e424fba896dc4eb302ce3', '1', '流程管理-流程部署', '1', TO_TIMESTAMP('2017/8/11 10:43:39.137000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process/deploy/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('18ba5f59f9b54ad09514b5008f46abfe', '1', '流程管理-运行中流程', '1', TO_TIMESTAMP('2017/8/11 10:43:39.612000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36', '/a/act/process/torunning', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('dac407b5c5764f8dbb22e830561ee3ae', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/19 14:13:06.164000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('93453446b54c4cce94a96f3ca46d5135', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2017/8/19 14:13:08.892000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('bd927d68799f40299263383b3c84950b', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:13:15.856000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('be3bd40aa9f245d99ed64d619fca1719', '1', '系统设置-系统设置-角色管理-修改', '1', TO_TIMESTAMP('2017/8/19 14:13:49.600000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('46e2d3d6aa824451a7b6a78fa557107b', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2017/8/19 14:14:07.126000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ecf61f416ba94d68b1d866744a0912fa', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:07.387000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b9090f510d34428bbbc9720607da41b6', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:11.034000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('97b86c0cf8fa40a8912944ead1a1db64', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:11.298000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('7f5da5bc04724028bd44ec3a767f2a6c', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:13.615000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('97b96fa51227468aa8b1b95e07faa092', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:13.834000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b4d50063183341d8a51a0d59f2e84199', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:14:14.228000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f87550a7f2124117a90dbbc3a1ce8d15', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/19 14:14:17.736000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('77954ae70b1c463383de06fbdcee94e1', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:18:19.368000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f7062ee278554a7aa1f5af9b0dce8fd2', '1', '系统设置-系统设置-菜单管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:18:38.444000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/form', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('fc06ef253df64ab7b01884ba348aadb1', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2017/8/19 14:19:33.390000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('8cd6718b9afd418db0849647188224b6', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:19:33.491000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6f470b4ed4344e66917514e85ed2422b', '1', '系统设置-系统设置-菜单管理-修改', '1', TO_TIMESTAMP('2017/8/19 14:19:52.271000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/save', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f4aefb2dabff4374b13c8b77a66000c0', '1', '系统设置-个人信息-个人信息', '1', TO_TIMESTAMP('2017/8/19 14:20:05.481000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/user/info', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('f919c98908d648d8975629077bedaa82', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/19 14:20:08.810000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('cdc330bef21b4fdb9308f74584931a59', '1', '系统设置-机构用户-机构管理', '1', TO_TIMESTAMP('2017/8/19 14:23:41.961000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/office/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('587e9f96d9b1493ba81e7217b12770a4', '1', '系统设置-机构用户-区域管理', '1', TO_TIMESTAMP('2017/8/19 14:23:42.925000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/area/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('b3ea4b2687df4f6fb8d5408b61730fb1', '1', '系统设置-系统设置-角色管理', '1', TO_TIMESTAMP('2017/8/19 14:23:44.668000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('1d69366a3d9144448368954c7169ba45', '1', '系统设置-系统设置-角色管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:23:44.870000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/role/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('e95af29f0149423a9d2358b25fce0da5', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:23:46.020000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('6cca0fa641684faaa850d82ec7c5d8bf', '1', '系统设置-系统设置-字典管理', '1', TO_TIMESTAMP('2017/8/19 14:23:47.271000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('c9d01faa9b2a4d619830a39c508a7aba', '1', '系统设置-系统设置-字典管理-查看', '1', TO_TIMESTAMP('2017/8/19 14:23:47.507000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/dict/list', 'POST');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('57928395cd394d5f82317aeac84530f9', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/19 14:23:49.784000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('0f9eb4d0bfe7438ba7169a5dce6c1286', '1', '系统设置-日志查询-系统更新日志', '1', TO_TIMESTAMP('2017/8/19 14:23:50.745000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log/updateLog', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('2c045ca616bf4776831ac8e295a09b6f', '1', '系统设置-日志查询-日志查询', '1', TO_TIMESTAMP('2017/8/19 14:23:52.090000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/log', 'GET');
+Insert into TEST.SYS_LOG
+   (ID, TYPE, TITLE, CREATE_BY, CREATE_DATE,
+    REMOTE_ADDR, USER_AGENT, REQUEST_URI, METHOD)
+ Values
+   ('ffffef4ad0bc42cdb7fff6b10c80141f', '1', '系统设置-系统设置-菜单管理', '1', TO_TIMESTAMP('2017/8/19 14:23:54.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0', '/a/sys/menu/', 'GET');
+COMMIT;
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('68', '67', '0,1,2,67,', '日志查询', 30,
+    '/sys/log', 'fa-file-zip-o', '1', 'sys:log:view', '1',
+    TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:34:38.786000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('69', '62', '0,1,62,', '流程管理', 300,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('70', '69', '0,1,62,69,', '流程管理', 50,
+    '/act/process', 'road', '1', 'act:process:edit', '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('71', '27', '0,1,27,', '文件管理', 90,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('22b0dab09cc04a6c9c829efcaf7b9b1d', '2', '0,1,2,', '教学管理', 5030,
+    '1', '1', TO_TIMESTAMP('2015/5/20 14:46:23.295000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/20 16:04:32.637000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('53510c2db4104e7a9d981b3358d4e4cc', '22b0dab09cc04a6c9c829efcaf7b9b1d', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,', '课程性质管理', 5060,
+    '/sys/nature', '1', '1', TO_TIMESTAMP('2015/5/20 14:47:00.191000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:35:31.184000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('ea09fa73a9694cf889dbf7d6c3786e27', '22b0dab09cc04a6c9c829efcaf7b9b1d', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,', '课程管理', 5060,
+    '/sys/course', '1', '1', TO_TIMESTAMP('2015/5/20 14:47:31.531000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:34:23.138000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('767d673e013b4086bcf07310c19056d1', '53510c2db4104e7a9d981b3358d4e4cc', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,53510c2db4104e7a9d981b3358d4e4cc,', '查看', 5060,
+    '0', 'sys:nature:view', '1', TO_TIMESTAMP('2015/5/20 15:04:53.109000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:35:54.028000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('d7fd0221c2bd4555a42348060aaefe29', '1', '0,1,', '编辑', 5060,
+    '1', 'sys:testNature:edit', '1', TO_TIMESTAMP('2015/5/20 15:05:21.718000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 15:05:21.718000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('abe674ab6a024be79e0371fab1058176', '53510c2db4104e7a9d981b3358d4e4cc', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,53510c2db4104e7a9d981b3358d4e4cc,', '编辑', 5060,
+    '0', 'sys:nature:edit', '1', TO_TIMESTAMP('2015/5/20 15:05:21.739000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:36:07.073000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('faf3410eab4546889d1bf830591459c5', 'ea09fa73a9694cf889dbf7d6c3786e27', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,ea09fa73a9694cf889dbf7d6c3786e27,', '查看', 5030,
+    '0', 'sys:course:view', '1', TO_TIMESTAMP('2015/5/20 16:10:29.790000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:34:49.684000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('1c314f16843440f49e4fc5130d6e0597', 'ea09fa73a9694cf889dbf7d6c3786e27', '0,1,2,22b0dab09cc04a6c9c829efcaf7b9b1d,ea09fa73a9694cf889dbf7d6c3786e27,', '编辑', 5030,
+    '0', 'sys:course:edit', '1', TO_TIMESTAMP('2015/5/20 16:11:20.821000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2015/5/20 16:35:01.846000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('72', '69', '0,1,62,69,', '模型管理', 100,
+    '/act/model', 'road', '1', 'act:model:edit', '1',
+    TO_TIMESTAMP('2013/9/20 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/9/20 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('73', '63', '0,1,62,63,', '我的任务', 50,
+    '/act/task/todo/', 'tasks', '1', '1', TO_TIMESTAMP('2013/9/24 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/9/24 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('74', '63', '0,1,62,63,', '审批测试', 100,
+    '/oa/testAudit', '1', 'oa:testAudit:view,oa:testAudit:edit', '1', TO_TIMESTAMP('2013/9/24 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/9/24 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('75', '1', '0,1,', '在线演示', 3000,
+    '1', '1', TO_TIMESTAMP('2013/10/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/10/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('79', '1', '0,1,', '代码生成', 5000,
+    '1', '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('80', '79', '0,1,79,', '代码生成', 50,
+    '1', '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('81', '80', '0,1,79,80,', '生成方案配置', 30,
+    '/gen/genScheme', '1', 'gen:genScheme:view,gen:genScheme:edit', '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('82', '80', '0,1,79,80,', '业务表配置', 20,
+    '/gen/genTable', '1', 'gen:genTable:view,gen:genTable:edit,gen:genTableColumn:view,gen:genTableColumn:edit', '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('83', '80', '0,1,79,80,', '代码模板管理', 90,
+    '/gen/genTemplate', '1', 'gen:genTemplate:view,gen:genTemplate:edit', '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/10/16 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('84', '67', '0,1,2,67,', '连接池监视', 60,
+    '/../druid', 'fa-database', '0', '1', TO_TIMESTAMP('2013/10/18 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:34:56.795000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('85', '76', '0,1,75,76,', '行政区域', 80,
+    '/../static/map/map-city.html', '1', '1', TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('86', '75', '0,1,75,', '组件演示', 50,
+    '1', '1', TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('87', '86', '0,1,75,86,', '组件演示', 30,
+    '/test/test/form', '1', 'test:test:view,test:test:edit', '1', TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/10/22 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('88', '62', '0,1,62,', '通知通告', 20,
+    '1', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('89', '88', '0,1,62,88,', '我的通告', 30,
+    '/oa/oaNotify/self', '1', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('90', '88', '0,1,62,88,', '通告管理', 50,
+    '/oa/oaNotify', '1', 'oa:oaNotify:view,oa:oaNotify:edit', '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/11/8 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('b48e7f02c426478ca8caa3efdf7f910c', '2', '0,1,2,', '个人信息', 60,
+    'fa-user', '1', '1', TO_TIMESTAMP('2016/3/21 21:25:32.045000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:25:32.045000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('b6db001cace1473fa3288c00915222da', '2', '0,1,2,', '我的通知', 30,
+    '/sys/notify', 'fa-bell', '1', '1', TO_TIMESTAMP('2016/3/21 21:27:42.773000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:27:42.773000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('844179edebc441638d8acefebd8d682d', 'cf44e4ba045d4f6e8bd132e3d9eb6d10', '0,1,cf44e4ba045d4f6e8bd132e3d9eb6d10,', '模型管理', 60,
+    '/act/model', 'fa-puzzle-piece', '1', 'act:model:edit', '1',
+    TO_TIMESTAMP('2016/3/21 21:36:45.578000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:36:45.578000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('f1dcd892a8574671bc2624012dda612b', 'cf44e4ba045d4f6e8bd132e3d9eb6d10', '0,1,cf44e4ba045d4f6e8bd132e3d9eb6d10,', '流程部署', 90,
+    '/act/process/deploy/', 'fa-sitemap', '1', 'act:process:edit', '1',
+    TO_TIMESTAMP('2016/3/21 21:37:14.710000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:37:14.710000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('690bf389a629410a9296e242671d1141', 'cf44e4ba045d4f6e8bd132e3d9eb6d10', '0,1,cf44e4ba045d4f6e8bd132e3d9eb6d10,', '运行中流程', 120,
+    '/act/process/torunning', 'fa-share-alt', '1', 'act:process:edit', '1',
+    TO_TIMESTAMP('2016/3/21 21:37:35.623000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:37:35.623000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('f94249795616454e9d5492b27bad31ab', 'b48e7f02c426478ca8caa3efdf7f910c', '0,1,2,b48e7f02c426478ca8caa3efdf7f910c,', '个人信息', 30,
+    '/sys/user/info', 'fa-user', '1', '1', TO_TIMESTAMP('2016/3/21 21:26:01.601000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:26:01.601000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('d85af28281f54d519353265cdaf8a259', 'b48e7f02c426478ca8caa3efdf7f910c', '0,1,2,b48e7f02c426478ca8caa3efdf7f910c,', '修改密码', 60,
+    '/sys/user/modifyPwd', 'fa-lock', '1', '1', TO_TIMESTAMP('2016/3/21 21:26:39.755000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:26:39.755000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('cf44e4ba045d4f6e8bd132e3d9eb6d10', '1', '0,1,', '流程管理', 60,
+    'fa-tasks', '1', '1', TO_TIMESTAMP('2016/3/21 21:35:54.511000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:35:54.511000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('5f40471ad5234411a9271f6e1b2ae475', 'cf44e4ba045d4f6e8bd132e3d9eb6d10', '0,1,cf44e4ba045d4f6e8bd132e3d9eb6d10,', '流程管理', 30,
+    '/act/process', 'fa-chain', '1', 'act:process:edit', '1',
+    TO_TIMESTAMP('2016/3/21 21:36:22.937000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:36:22.937000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('57c7e94d1e6743b492343bb521f0329e', '67', '0,1,2,67,', '系统更新日志', 45,
+    '/sys/log/updateLog', 'fa-file-zip-o', '1', 'sys:updateLog:view', '1',
+    TO_TIMESTAMP('2017/8/19 14:19:33.359000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2017/8/19 14:19:52.246000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('3c92c17886944d0687e73e286cada573', '79', '0,1,79,', '生成示例', 120,
+    '1', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('ba8092291b40482db8fe7fc006ea3d76', '3c92c17886944d0687e73e286cada573', '0,1,79,3c92c17886944d0687e73e286cada573,', '单表', 30,
+    '/test/testData', '1', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('0b2ebd4d639e4c2b83c2dd0764522f24', 'ba8092291b40482db8fe7fc006ea3d76', '0,1,79,3c92c17886944d0687e73e286cada573,ba8092291b40482db8fe7fc006ea3d76,', '编辑', 60,
+    '0', 'test:testData:edit', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('df7ce823c5b24ff9bada43d992f373e2', 'ba8092291b40482db8fe7fc006ea3d76', '0,1,79,3c92c17886944d0687e73e286cada573,ba8092291b40482db8fe7fc006ea3d76,', '查看', 30,
+    '0', 'test:testData:view', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('b1f6d1b86ba24365bae7fd86c5082317', '3c92c17886944d0687e73e286cada573', '0,1,79,3c92c17886944d0687e73e286cada573,', '主子表', 60,
+    '/test/testDataMain', '1', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('4855cf3b25c244fb8500a380db189d97', 'b1f6d1b86ba24365bae7fd86c5082317', '0,1,79,3c92c17886944d0687e73e286cada573,b1f6d1b86ba24365bae7fd86c5082317,', '查看', 30,
+    '0', 'test:testDataMain:view', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('d15ec45a4c5449c3bbd7a61d5f9dd1d2', 'b1f6d1b86ba24365bae7fd86c5082317', '0,1,79,3c92c17886944d0687e73e286cada573,b1f6d1b86ba24365bae7fd86c5082317,', '编辑', 60,
+    '0', 'test:testDataMain:edit', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('0ca004d6b1bf4bcab9670a5060d82a55', '3c92c17886944d0687e73e286cada573', '0,1,79,3c92c17886944d0687e73e286cada573,', '树结构', 90,
+    '/test/testTree', '1', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('c2e4d9082a0b4386884a0b203afe2c5c', '0ca004d6b1bf4bcab9670a5060d82a55', '0,1,79,3c92c17886944d0687e73e286cada573,0ca004d6b1bf4bcab9670a5060d82a55,', '查看', 30,
+    '0', 'test:testTree:view', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('afab2db430e2457f9cf3a11feaa8b869', '0ca004d6b1bf4bcab9670a5060d82a55', '0,1,79,3c92c17886944d0687e73e286cada573,0ca004d6b1bf4bcab9670a5060d82a55,', '编辑', 60,
+    '0', 'test:testTree:edit', '1', TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/12/8 15:16:19.119000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('1', '0', '0,', '功能菜单', 0,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('2', '1', '0,1,', '系统设置', 30,
+    'fa-desktop', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:26:55.700000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('3', '2', '0,1,2,', '系统设置', 120,
+    'fa-desktop', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:32:08.765000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('4', '3', '0,1,2,3,', '菜单管理', 30,
+    '/sys/menu/', 'fa-bars', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:33:05.784000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('5', '4', '0,1,2,3,4,', '查看', 30,
+    '0', 'sys:menu:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('6', '4', '0,1,2,3,4,', '修改', 60,
+    '0', 'sys:menu:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('7', '3', '0,1,2,3,', '角色管理', 60,
+    '/sys/role/', 'fa-cogs', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:33:22.492000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('8', '7', '0,1,2,3,7,', '查看', 30,
+    '0', 'sys:role:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('9', '7', '0,1,2,3,7,', '修改', 60,
+    '0', 'sys:role:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('10', '3', '0,1,2,3,', '字典管理', 90,
+    '/sys/dict/', 'fa-book', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:33:39.124000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('11', '10', '0,1,2,3,10,', '查看', 30,
+    '0', 'sys:dict:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('12', '10', '0,1,2,3,10,', '修改', 60,
+    '0', 'sys:dict:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('13', '2', '0,1,2,', '机构用户', 90,
+    'fa-building-o', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:28:28.821000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('14', '13', '0,1,2,13,', '区域管理', 90,
+    '/sys/area/', 'fa-delicious', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:30:38.979000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('15', '14', '0,1,2,13,14,', '查看', 30,
+    '0', 'sys:area:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('16', '14', '0,1,2,13,14,', '修改', 60,
+    '0', 'sys:area:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('17', '13', '0,1,2,13,', '机构管理', 60,
+    '/sys/office/', 'fa-university', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:30:19.775000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('18', '17', '0,1,2,13,17,', '查看', 30,
+    '0', 'sys:office:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('19', '17', '0,1,2,13,17,', '修改', 60,
+    '0', 'sys:office:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('20', '13', '0,1,2,13,', '用户管理', 30,
+    '/sys/user/index', 'fa-users', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/21 21:28:57.947000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('21', '20', '0,1,2,13,20,', '查看', 30,
+    '0', 'sys:user:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('22', '20', '0,1,2,13,20,', '修改', 60,
+    '0', 'sys:user:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('23', '2', '0,1,2,', '关于帮助', 990,
+    '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, TARGET, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('24', '23', '0,1,2,23', '官方首页', 30,
+    'http://jeesite.com', '_blank', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, TARGET, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('25', '23', '0,1,2,23', '项目支持', 50,
+    'http://jeesite.com/donation.html', '_blank', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, TARGET, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('26', '23', '0,1,2,23', '论坛交流', 80,
+    'http://bbs.jeesite.com', '_blank', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('27', '1', '0,1,', '我的面板', 100,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('28', '27', '0,1,27,', '个人信息', 30,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('29', '28', '0,1,27,28,', '个人信息', 30,
+    '/sys/user/info', 'user', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('30', '28', '0,1,27,28,', '修改密码', 40,
+    '/sys/user/modifyPwd', 'lock', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('31', '1', '0,1,', '内容管理', 500,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('32', '31', '0,1,31,', '栏目设置', 990,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('33', '32', '0,1,31,32', '栏目管理', 30,
+    '/cms/category/', 'align-justify', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('34', '33', '0,1,31,32,33,', '查看', 30,
+    '0', 'cms:category:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('35', '33', '0,1,31,32,33,', '修改', 40,
+    '0', 'cms:category:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('36', '32', '0,1,31,32', '站点设置', 40,
+    '/cms/site/', 'certificate', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('37', '36', '0,1,31,32,36,', '查看', 30,
+    '0', 'cms:site:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('38', '36', '0,1,31,32,36,', '修改', 40,
+    '0', 'cms:site:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('39', '32', '0,1,31,32', '切换站点', 50,
+    '/cms/site/select', 'retweet', '1', 'cms:site:select', '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('40', '31', '0,1,31,', '内容管理', 500,
+    '1', 'cms:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('41', '40', '0,1,31,40,', '内容发布', 30,
+    '/cms/', 'briefcase', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('42', '41', '0,1,31,40,41,', '文章模型', 40,
+    '/cms/article/', 'file', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('43', '42', '0,1,31,40,41,42,', '查看', 30,
+    '0', 'cms:article:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('44', '42', '0,1,31,40,41,42,', '修改', 40,
+    '0', 'cms:article:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('45', '42', '0,1,31,40,41,42,', '审核', 50,
+    '0', 'cms:article:audit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('46', '41', '0,1,31,40,41,', '链接模型', 60,
+    '/cms/link/', 'random', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('47', '46', '0,1,31,40,41,46,', '查看', 30,
+    '0', 'cms:link:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('48', '46', '0,1,31,40,41,46,', '修改', 40,
+    '0', 'cms:link:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('49', '46', '0,1,31,40,41,46,', '审核', 50,
+    '0', 'cms:link:audit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('50', '40', '0,1,31,40,', '评论管理', 40,
+    '/cms/comment/?status=2', 'comment', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('51', '50', '0,1,31,40,50,', '查看', 30,
+    '0', 'cms:comment:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('52', '50', '0,1,31,40,50,', '审核', 40,
+    '0', 'cms:comment:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('53', '40', '0,1,31,40,', '公共留言', 80,
+    '/cms/guestbook/?status=2', 'glass', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('54', '53', '0,1,31,40,53,', '查看', 30,
+    '0', 'cms:guestbook:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('55', '53', '0,1,31,40,53,', '审核', 40,
+    '0', 'cms:guestbook:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('56', '71', '0,1,27,71,', '文件管理', 90,
+    '/../static/ckfinder/ckfinder.html', 'folder-open', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('57', '56', '0,1,27,40,56,', '查看', 30,
+    '0', 'cms:ckfinder:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('58', '56', '0,1,27,40,56,', '上传', 40,
+    '0', 'cms:ckfinder:upload', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('59', '56', '0,1,27,40,56,', '修改', 50,
+    '0', 'cms:ckfinder:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('60', '31', '0,1,31,', '统计分析', 600,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, PERMISSION, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('61', '60', '0,1,31,60,', '信息量统计', 30,
+    '/cms/stats/article', 'tasks', '1', 'cms:stats:article', '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('62', '1', '0,1,', '在线办公', 200,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE,
+    DEL_FLAG, IS_MOBILE)
+ Values
+   ('63', '62', '0,1,62,', '个人办公', 30,
+    '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    HREF, ICON, IS_SHOW, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('64', '63', '0,1,62,63,', '请假办理', 300,
+    '/oa/leave', 'leaf', '0', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('65', '64', '0,1,62,63,64,', '查看', 30,
+    '0', 'oa:leave:view', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('66', '64', '0,1,62,63,64,', '修改', 40,
+    '0', 'oa:leave:edit', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '0');
+Insert into TEST.SYS_MENU
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    ICON, IS_SHOW, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG, IS_MOBILE)
+ Values
+   ('67', '2', '0,1,2,', '日志查询', 150,
+    'fa-file-zip-o', '1', '1', TO_TIMESTAMP('2013/6/3 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2016/3/21 21:34:23.664000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '0');
+COMMIT;
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '0', '0,', '山东省总公司', 10,
+    '2', '100000', '1', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '1', '0,1,', '公司领导', 10,
+    '2', '100001', '2', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '1', '0,1,', '综合部', 20,
+    '2', '100002', '2', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '1', '0,1,', '市场部', 30,
+    '2', '100003', '2', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '1', '0,1,', '技术部', 40,
+    '2', '100004', '2', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '1', '0,1,', '研发部', 50,
+    '2', '100005', '2', '1', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', '1', '0,1,', '济南市分公司', 20,
+    '3', '200000', '1', '2', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', '7', '0,1,7,', '公司领导', 10,
+    '3', '200001', '2', '2', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9', '7', '0,1,7,', '综合部', 20,
+    '3', '200002', '2', '2', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('10', '7', '0,1,7,', '市场部', 30,
+    '3', '200003', '2', '2', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('11', '7', '0,1,7,', '技术部', 40,
+    '3', '200004', '2', '2', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('12', '7', '0,1,7,', '历城区分公司', 0,
+    '4', '201000', '1', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('13', '12', '0,1,7,12,', '公司领导', 10,
+    '4', '201001', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('14', '12', '0,1,7,12,', '综合部', 20,
+    '4', '201002', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('15', '12', '0,1,7,12,', '市场部', 30,
+    '4', '201003', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('16', '12', '0,1,7,12,', '技术部', 40,
+    '4', '201004', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('17', '7', '0,1,7,', '历下区分公司', 40,
+    '5', '201010', '1', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('18', '17', '0,1,7,17,', '公司领导', 10,
+    '5', '201011', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('19', '17', '0,1,7,17,', '综合部', 20,
+    '5', '201012', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('20', '17', '0,1,7,17,', '市场部', 30,
+    '5', '201013', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG,
+    COMPANY_ID)
+ Values
+   ('21', '17', '0,1,7,17,', '技术部', 40,
+    '5', '201014', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/22 9:31:00.424000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0',
+    '1');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('22', '7', '0,1,7,', '高新区分公司', 50,
+    '6', '201010', '1', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('23', '22', '0,1,7,22,', '公司领导', 10,
+    '6', '201011', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('24', '22', '0,1,7,22,', '综合部', 20,
+    '6', '201012', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('25', '22', '0,1,7,22,', '市场部', 30,
+    '6', '201013', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_OFFICE
+   (ID, PARENT_ID, PARENT_IDS, NAME, SORT,
+    AREA_ID, CODE, TYPE, GRADE, USEABLE,
+    CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('26', '22', '0,1,7,22,', '技术部', 40,
+    '6', '201014', '2', '3', '1',
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('a8c08a8e892642429b09c65479eb5135', '2', '系统临时管理员', 'xtlsgly', 'security-role',
+    '1', '1', '1', TO_TIMESTAMP('2017/8/19 14:13:49.549000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2017/8/19 14:13:49.549000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, IS_SYS, USEABLE, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('1', '2', '系统管理员', 'dept', 'assignment',
+    '1', '1', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 16:13:18.851000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, IS_SYS, USEABLE, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '2', '公司管理员', 'hr', 'assignment',
+    '2', '1', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 14:54:18.140000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '1', '本公司管理员', 'a', 'assignment',
+    '3', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '1', '部门管理员', 'b', 'assignment',
+    '4', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '1', '本部门管理员', 'c', 'assignment',
+    '5', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '1', '普通用户', 'd', 'assignment',
+    '8', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_ROLE
+   (ID, OFFICE_ID, NAME, ENNAME, ROLE_TYPE,
+    DATA_SCOPE, USEABLE, CREATE_BY, CREATE_DATE, UPDATE_BY,
+    UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', '7', '济南市管理员', 'e', 'assignment',
+    '9', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '1c314f16843440f49e4fc5130d6e0597');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '22b0dab09cc04a6c9c829efcaf7b9b1d');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '53510c2db4104e7a9d981b3358d4e4cc');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '767d673e013b4086bcf07310c19056d1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', 'abe674ab6a024be79e0371fab1058176');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', 'ea09fa73a9694cf889dbf7d6c3786e27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('1', 'faf3410eab4546889d1bf830591459c5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '22b0dab09cc04a6c9c829efcaf7b9b1d');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '53510c2db4104e7a9d981b3358d4e4cc');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('2', 'ea09fa73a9694cf889dbf7d6c3786e27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '25');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '26');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('3', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '25');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '26');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('4', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '25');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '26');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('5', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '25');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '26');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('6', '9');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '1');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '10');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '11');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '12');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '13');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '14');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '15');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '16');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '17');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '18');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '19');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '2');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '20');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '21');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '22');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '23');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '24');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '25');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '26');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '27');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '28');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '29');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '3');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '30');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '31');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '32');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '33');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '34');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '35');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '36');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '37');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '38');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '39');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '4');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '40');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '41');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '42');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '43');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '44');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '45');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '46');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '47');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '48');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '49');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '5');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '50');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '51');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '52');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '53');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '54');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '55');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '56');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '57');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '58');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '59');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '6');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '60');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '61');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '62');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '63');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '64');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '65');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '66');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '67');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '68');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '69');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '7');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '70');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '71');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '72');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '8');
+Insert into TEST.SYS_ROLE_MENU
+   (ROLE_ID, MENU_ID)
+ Values
+   ('7', '9');
+COMMIT;
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '10');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '11');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '12');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '13');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '14');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '15');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '16');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '17');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '18');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '19');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '20');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '21');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '22');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '23');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '24');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '25');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '26');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '7');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '8');
+Insert into TEST.SYS_ROLE_OFFICE
+   (ROLE_ID, OFFICE_ID)
+ Values
+   ('7', '9');
+COMMIT;
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, EMAIL, PHONE, MOBILE,
+    PHOTO, LOGIN_IP, LOGIN_DATE, LOGIN_FLAG, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS, DEL_FLAG)
+ Values
+   ('1', '1', '2', 'thinkgem', '739e1aeb846edd0bb79e7734190434f454d8c4a9ab2fc09aebe9d0f6',
+    '0001', '系统管理员', 'thinkgem@163.com', '8675', '8675',
+    '.jpg', '127.0.0.1', TO_TIMESTAMP('2017/8/19 14:23:13.669000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', '1',
+    TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2016/3/21 21:17:06.839000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '最高管理员', '0');
+Insert into TEST.SYS_USER
+   (ID, OFFICE_ID, LOGIN_NAME, PASSWORD, NO,
+    NAME, USER_TYPE, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('2', '2', 'sd_admin', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032', '0002',
+    '管理员', '1', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/22 9:28:45.741000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('3', '1', '3', 'sd_zhb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0003', '综合部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('4', '1', '4', 'sd_scb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0004', '市场部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('5', '1', '5', 'sd_jsb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0005', '技术部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('6', '1', '6', 'sd_yfb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0006', '研发部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('7', '7', '8', 'jn_admin', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0007', '济南领导', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('8', '7', '9', 'jn_zhb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0008', '济南综合部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('9', '7', '10', 'jn_scb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0009', '济南市场部', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, OFFICE_ID, LOGIN_NAME, PASSWORD, NO,
+    NAME, USER_TYPE, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('10', '11', 'jn_jsb', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032', '0010',
+    '济南技术部', '1', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2016/3/22 9:29:18.435000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('11', '12', '13', 'lc_admin', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0011', '济南历城领导', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('12', '12', '18', 'lx_admin', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0012', '济南历下领导', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.SYS_USER
+   (ID, COMPANY_ID, OFFICE_ID, LOGIN_NAME, PASSWORD,
+    NO, NAME, LOGIN_FLAG, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('13', '22', '23', 'gx_admin', '02a3f0772fcca9f415adc990734b45c6f059c7d33ee28362c4852032',
+    '0013', '济南高新领导', '1', '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2013/5/27 8:00:00.000000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('1', '1');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('1', '2');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('10', '2');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('11', '3');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('12', '4');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('13', '5');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('14', '6');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('2', '1');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('3', '2');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('4', '3');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('5', '4');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('6', '5');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('7', '2');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('7', '7');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('8', '2');
+Insert into TEST.SYS_USER_ROLE
+   (USER_ID, ROLE_ID)
+ Values
+   ('9', '1');
+COMMIT;
+Insert into TEST.TEST_COURSE
+   (ID, CODE, NAME, XF, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, NATURE_ID)
+ Values
+   ('44bf60f335fc4112b5d524b1094185c3', 'zgg01', '公共英语(一)', '2', '1',
+    TO_TIMESTAMP('2015/5/21 15:49:17.903000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/21 15:49:17.903000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '78161b8d1e784242936413c66bdaa18d');
+Insert into TEST.TEST_COURSE
+   (ID, CODE, NAME, XF, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, NATURE_ID)
+ Values
+   ('d5e2460622f24aefa93b157039c42adb', 'zgg02', '邓小平理论和三个代表重要思想', '3', '1',
+    TO_TIMESTAMP('2015/5/21 15:57:37.869000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/21 15:57:37.869000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '78161b8d1e784242936413c66bdaa18d');
+Insert into TEST.TEST_COURSE
+   (ID, CODE, NAME, XF, CREATE_BY,
+    CREATE_DATE, UPDATE_BY, UPDATE_DATE, DEL_FLAG, NATURE_ID)
+ Values
+   ('d80590a839ff40c38434bc758638c112', 'zgg03', '公共英语(二)', '2', '1',
+    TO_TIMESTAMP('2015/5/21 16:04:08.685000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '1', TO_TIMESTAMP('2015/5/21 16:04:08.685000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0', '78161b8d1e784242936413c66bdaa18d');
+COMMIT;
+Insert into TEST.TEST_NATURE
+   (ID, CODE, NAME, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('78161b8d1e784242936413c66bdaa18d', 'A', '公共必修', '1', TO_TIMESTAMP('2015/5/20 16:07:09.502000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 16:07:09.502000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.TEST_NATURE
+   (ID, CODE, NAME, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('da3133ea4e0945c19154fe7dec293a06', 'B', '专业必修', '1', TO_TIMESTAMP('2015/5/20 16:07:23.679000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 16:07:23.679000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.TEST_NATURE
+   (ID, CODE, NAME, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('deeccc7f454b44a6b5a01dac52f53ecc', 'C', '公共选修', '1', TO_TIMESTAMP('2015/5/20 16:07:43.405000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 16:08:00.966000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+Insert into TEST.TEST_NATURE
+   (ID, CODE, NAME, CREATE_BY, CREATE_DATE,
+    UPDATE_BY, UPDATE_DATE, DEL_FLAG)
+ Values
+   ('dfa47d44d03e4675a5c99a7be47fc4a3', 'D', '专业选修', '1', TO_TIMESTAMP('2015/5/20 16:08:11.813000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'),
+    '1', TO_TIMESTAMP('2015/5/20 16:08:11.813000','YYYY/fmMMfm/fmDDfm fmHH24fm:MI:SS.FF'), '0');
+COMMIT;
